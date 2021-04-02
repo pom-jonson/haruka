@@ -1,0 +1,166 @@
+{
+    "specimen_test":{
+        "sel_exams":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査項目が選択されていないので確定できません",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "order_comment":{
+            "is_required":0,
+            "length": 20,
+            "requierd_message":"",
+            "overflow_message": "依頼コメントは20文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "free_comment":{
+            "is_required":0,
+            "length": "20",
+            "requierd_message":"",
+            "overflow_message": "フリーコメントは20文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "endoscope":{
+        "inspection_type_name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査種別を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "inspection_item_name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査項目を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "etc_comment":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "主訴、臨床経過、検査目的、コメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "request_comment":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "依頼コメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "sick_name":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "病名は100文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "physiological":{
+        "classification1_name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査種別を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "classification2_name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査詳細を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "etc_comment":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "主訴、臨床経過、検査目的、コメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "request_comment":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "依頼コメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "sick_name":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "病名は100文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "lung":{
+        "classification1_name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査種別を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "classification2_name":{
+
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査詳細を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "height":{
+          "is_required":1,
+          "length": 10,
+          "requierd_message":"身長を入力してください。",
+          "overflow_message": "身長を正確に入力してください。",
+          "type_error_message": "",
+	  "min":50,
+          "min_message": "身長を50以上で入力してください。",
+	  "max":300,
+          "max_message": "身長を300以下で入力してください。"
+        },
+        "weight":{
+          "is_required":1,
+          "length": 10,
+          "requierd_message":"体重を入力してください。",
+          "overflow_message": "体重を正確に入力してください。",
+          "type_error_message": "",
+	  "min":0,
+          "min_message": "体重を0以上で入力してください。",
+	  "max":300,
+          "max_message": "体重を300以下で入力してください。"
+        },
+        "surface_area":{
+          "is_required":1,
+          "length": "",
+          "requierd_message":"体表面積を入力してください。",
+          "overflow_message": "",
+          "type_error_message": ""
+        },
+        "etc_comment":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "主訴、臨床経過、検査目的、コメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "request_comment":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "依頼コメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "sick_name":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "病名は100文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    }
+}

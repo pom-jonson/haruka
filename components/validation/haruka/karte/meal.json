@@ -1,0 +1,69 @@
+{
+    "meal_change":{
+        "start_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事開始日時を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "start_time_classification":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"開始時間区分を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "number_of_meals":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事回数を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "food_type_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食種を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "meal_period_change":{
+        "start_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"対象期間を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "start_date_to":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"対象期間を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "start_time_classification":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事時間区分を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "start_time_classification_to":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事時間区分を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "food_type_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食種を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    }
+}

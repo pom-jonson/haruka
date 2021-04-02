@@ -1,0 +1,235 @@
+{
+    "dial_pattern":{
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "dial_injection_pattern":{
+        "injection_category":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"区分を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "timing_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"タイミングを選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "final_week_days":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"曜日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "dial_prescription_pattern":{
+        "data_json":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"薬剤を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "final_week_days":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"曜日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "dial_prescript":{
+        "type":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"区分を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "medicine_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"薬剤を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "amount":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"数量を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "timing_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"タイミングを選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "final_week_days":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"曜日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_to":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "dial_inspection":{
+        "name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査名を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "timing_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"タイミングを選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "final_week_days":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"曜日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_to":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "dial_administrativefee":{
+        "name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"名称を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "implementationType":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"実施方式を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "final_week_days":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"曜日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_to":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "dial_anticoagulation_pattern":{
+        "anticoagulation_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"抗凝固剤を選択してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "final_week_days":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"曜日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "dial_dialyzer_pattern":{
+        "name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"名称を選択してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "final_week_days":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"曜日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    }
+}

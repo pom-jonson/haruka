@@ -1,0 +1,21 @@
+{
+    "free_comment":{
+        "is_required":0,
+        "length": "1000",
+        "requierd_message":"",
+        "overflow_message": "経過・RISK・合併症等は1000文字以内で入力してください。",
+        "type_error_message": "経過・RISK・合併症等に印刷や医事連携できない可能性のある文字を含んでいます。機種依存文字は他の文字に置き換えてください"
+    },
+    "special_comment":{
+        "is_required":0,
+        "length": "1000",
+        "requierd_message":"",
+        "overflow_message": "特記事項は1000文字以内で入力してください。",
+        "type_error_message": "特記事項に印刷や医事連携できない可能性のある文字を含んでいます。機種依存文字は他の文字に置き換えてください"
+    },
+    "therapy_item2_amount": {
+        "max_length": 10,
+        "integer_length": 6,
+        "decimal_length": 4
+    }
+}

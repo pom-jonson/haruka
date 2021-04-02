@@ -1,0 +1,159 @@
+{
+    "dial_pattern":{
+        "time_limit_from":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"期限を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "dial_input_weight":{
+        "weight_before_raw":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"前体重を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "dw":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"DWを入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "wheelchair_before":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"車椅子(前)を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "clothesWeight1":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"風袋①を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "clothesWeight2":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"風袋②を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "clothesWeight3":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"風袋③を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "weight_after_raw":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"後体重を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "target_weight":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"本日目標体重を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "wheelchair_after":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"車椅子(後)を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "supplement":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"補食を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "liquid":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"補液を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "target_amount":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"目標除水量を入力してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "my_calendar":{
+        "schedule_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"日付を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "summary":{
+            "is_required":1,
+            "length": "100",
+            "requierd_message":"概要を入力してください。",
+            "overflow_message": "概要は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "body":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"概要を入力してください。",
+            "overflow_message": "本文は1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "patient_schedule":{
+        "planned_type":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"予定種類を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "facility":{
+            "is_required":1,
+            "length": "100",
+            "requierd_message":"施設等を入力してください。",
+            "overflow_message": "施設等は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "description":{
+            "is_required":1,
+            "length": "1000",
+            "requierd_message":"内容を入力してください。",
+            "overflow_message": "内容は1000文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "備考は1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "karte":{
+        "body":{
+            "is_required":1,
+            "length": "100",
+            "requierd_message":"本文を入力してください。",
+            "overflow_message": "本文を100文字以下で入力してください。",
+            "type_error_message": ""
+        }
+    }
+}

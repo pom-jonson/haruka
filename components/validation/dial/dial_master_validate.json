@@ -1,0 +1,1109 @@
+{
+  "dial_institution_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "機関コードを入力してください。",
+      "overflow_message": "機関コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "ccorporation_name": {
+      "is_required": 1,
+      "length": 40,
+      "requierd_message": "法人名を入力してください。",
+      "overflow_message": "法人名を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "medical_institution_name": {
+      "is_required": 1,
+      "length": 40,
+      "requierd_message": "医療機関名を入力してください。",
+      "overflow_message": "医療機関名を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "medical_institution_name_kana": {
+      "is_required": 1,
+      "length": 40,
+      "requierd_message": "医療機関カナ名を入力してください。",
+      "overflow_message": "医療機関カナ名を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "view_name": {
+      "is_required": 1,
+      "length": 40,
+      "requierd_message": "システム内表示名を入力してください。",
+      "overflow_message": "システム内表示名を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "representative_name": {
+      "length": 40,
+      "requierd_message": "代表者名を入力してください。",
+      "overflow_message": "代表者名を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "doctor_name": {
+      "length": 40,
+      "requierd_message": "医師名を入力してください。",
+      "overflow_message": "医師名を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "zip_code": {
+      "length": 8,
+      "requierd_message": "郵便番号を入力してください。",
+      "overflow_message": "郵便番号を8文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "address_1": {
+      "is_required": 1,
+      "length": 40,
+      "requierd_message": "住所1を入力してください。",
+      "overflow_message": "住所1を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "address_2": {
+      "length": 40,
+      "requierd_message": "住所2を入力してください。",
+      "overflow_message": "住所2を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "phone_number": {
+      "is_required": 1,
+      "length": 15,
+      "requierd_message": "電話番号を入力してください。",
+      "overflow_message": "電話番号を15文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "fax_number": {
+      "length": 15,
+      "requierd_message": "Fax番号を入力してください。",
+      "overflow_message": "Fax番号を15文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "number_of_concurrent_dialysis":{
+      "length": 9,
+      "requierd_message": "同時透析能力を入力してください。",
+      "overflow_message": "同時透析能力を9文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "maximum_capacity":{
+      "length": 9,
+      "requierd_message": "最大収容能力を入力してください。",
+      "overflow_message": "最大収容能力を9文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "number_of_consoles": {
+      "length": 9,
+      "requierd_message": "コンソール数を入力してください。",
+      "overflow_message": "コンソール数を9文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    
+    "prefectures_number": {
+      "length": 2,
+      "requierd_message": "都道府県番号を入力してください。",
+      "overflow_message": "都道府県番号を2文字で入力してください。",
+      "type_error_message": ""
+    },
+    "point_table_number": {
+      "length": 40,
+      "requierd_message": "点数表番号を入力してください。",
+      "overflow_message": "点数表番号を40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "medical_institution_code": {
+      "length": 40,
+      "requierd_message": "医療機関コードを入力してください。",
+      "overflow_message": "医療機関コードを40文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "treatment_type_code": {
+      "length": 40,
+      "requierd_message": "診療種別コードを入力してください。",
+      "overflow_message": "診療種別コードを40文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "bed_master": {
+    "name": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "ベッド番号を入力してください。",
+      "overflow_message": "ベット番号を10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "group_1": {
+      "is_required": 1,
+      "length": 32,
+      "requierd_message": "グループ１を入力してください。",
+      "overflow_message": "グループ１を32文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "group_2": {
+      "is_required": 1,
+      "length": 32,
+      "requierd_message": "グループ2を入力してください。",
+      "overflow_message": "グループ2を32文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_common_code_master": {
+    "category": {
+      "is_required": 1,
+      "length": "",
+      "requierd_message": "",
+      "overflow_message": "",
+      "type_error_message": ""
+    },
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コードを入力してください。",
+      "overflow_message": "コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_material_master__anticoagulation": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コードを入力してください。",
+      "overflow_message": "コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 35,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を35文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 35,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を35文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 35,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を35文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "unit": {
+      "length": 10,
+      "requierd_message": "単位を入力してください。",
+      "overflow_message": "単位を10文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_material_master__anticoagulation_pattern": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コード番号を入力してください。",
+      "overflow_message": "コード番号を10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 35,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を35文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 35,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を35文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 35,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を35文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_material_master__common": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コードを入力してください。",
+      "overflow_message": "コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_material_master__console": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コードを入力してください。",
+      "overflow_message": "コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_material_master__dialysis_method": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コードを入力してください。",
+      "overflow_message": "コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "mode_number": {
+      "length": 10,
+      "requierd_message": "共通送信プロトコル番号を入力してください。",
+      "overflow_message": "共通送信プロトコル番号を10文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_material_master__dialyzer": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コードを入力してください。",
+      "overflow_message": "コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "jan_code": {
+      "length": 20,
+      "requierd_message": "JANコードを入力してください。",
+      "overflow_message": "JANコードを20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "membrane_area": {
+      "length": 20,
+      "requierd_message": "膜面積を入力してください。",
+      "overflow_message": "膜面積を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "cl": {
+      "length": 20,
+      "requierd_message": "CL(in Vitro)を入力してください。",
+      "overflow_message": "CL(in Vitro)を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "blood_flow_rate": {
+      "length": 20,
+      "requierd_message": "血液流量を入力してください。",
+      "overflow_message": "血液流量を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "dialysate_flow_rate": {
+      "length": 20,
+      "requierd_message": "透析液流量を入力してください。",
+      "overflow_message": "透析液流量を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "efficiency": {
+      "length": 20,
+      "requierd_message": "効率を入力してください。",
+      "overflow_message": "効率を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "flow_rate_ratio": {
+      "length": 20,
+      "requierd_message": "流量比を入力してください。",
+      "overflow_message": "流量比を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "k": {
+      "length": 20,
+      "requierd_message": "Kを入力してください。",
+      "overflow_message": "Kを20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_periodic_examination_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コード番号を入力してください。",
+      "overflow_message": "コード番号を10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "examination_category": {
+      "length": 20,
+      "requierd_message": "検査種別を入力してください。",
+      "overflow_message": "検査種別を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "schedule_icon_text": {
+      "length": 20,
+      "requierd_message": "表示文字を入力してください。",
+      "overflow_message": "表示文字を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_medicine_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "薬剤コードを入力してください。",
+      "overflow_message": "薬剤コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "正式名称を入力してください。",
+      "overflow_message": "正式名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "unit": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "単位を入力してください。",
+      "overflow_message": "単位を10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "mhlw_code": {
+      "length": 10,
+      "requierd_message": "厚生労働省コードを入力してください。",
+      "overflow_message": "厚生労働省コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_view": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "generic_name": {
+      "length": 20,
+      "requierd_message": "一般名称を入力してください。",
+      "overflow_message": "一般名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "medicinal_properties": {
+      "length": 30,
+      "requierd_message": "薬効を入力してください。",
+      "overflow_message": "薬効を30文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_medicine_usage_group_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コードを入力してください。",
+      "overflow_message": "コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_medicine_usage_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "服用コードを入力してください。",
+      "overflow_message": "服用コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_injection_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "注射コードを入力してください。",
+      "overflow_message": "注射コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_view": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "正式名称を入力してください。",
+      "overflow_message": "正式名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "unit": {
+      "length": 10,
+      "requierd_message": "単位を入力してください。",
+      "overflow_message": "単位を10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "mhlw_code": {
+      "length": 10,
+      "requierd_message": "厚生労働省コードを入力してください。",
+      "overflow_message": "厚生労働省コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "generic_name": {
+      "length": 20,
+      "requierd_message": "一般名称を入力してください。",
+      "overflow_message": "一般名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "medicinal_properties": {
+      "length": 30,
+      "requierd_message": "",
+      "overflow_message": "",
+      "type_error_message": ""
+    },
+    "one_unit_value": {
+      "length": 10,
+      "requierd_message": "単位数量を入力してください。",
+      "overflow_message": "単位数量を10文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_mhlw_medicine_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "コード番号を入力してください。",
+      "overflow_message": "コード番号を10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "mhlw_code": {
+      "length": 10,
+      "requierd_message": "厚生労働省コードを入力してください。",
+      "overflow_message": "厚生労働省コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "unit": {
+      "length": 10,
+      "requierd_message": "単位を入力してください。",
+      "overflow_message": "単位を10文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_examination_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "検査項目コードを入力してください。",
+      "overflow_message": "検査項目コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "company_examination_code": {
+      "length": 10,
+      "requierd_message": "検査会社コードを入力してください。",
+      "overflow_message": "検査会社コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "検査名称を入力してください。",
+      "overflow_message": "検査名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "unit": {
+      "length": 20,
+      "requierd_message": "単位を入力してください。",
+      "overflow_message": "単位を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "reference_value_male_min": {
+      "length": 20,
+      "requierd_message": "",
+      "overflow_message": "男性下限値を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "reference_value_male_max": {
+      "length": 20,
+      "requierd_message": "",
+      "overflow_message": "男性上限値を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "reference_value_male": {
+      "length": 20,
+      "requierd_message": "",
+      "overflow_message": "男性標準値を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "reference_value_female_min": {
+      "length": 20,
+      "requierd_message": "",
+      "overflow_message": "女性下限値を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "reference_value_female_max": {
+      "length": 20,
+      "requierd_message": "",
+      "overflow_message": "女性上限値を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "reference_value_female": {
+      "length": 20,
+      "requierd_message": "",
+      "overflow_message": "女性標準値を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_examination_master_pattern": {
+    "patternCode": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "パターンコードを入力してください。",
+      "overflow_message": "パターンコードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "displayOrder": {
+      "length": 11,
+      "requierd_message": "",
+      "overflow_message": "表示順を11文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "patternName": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "検査パターン名称を入力してください。",
+      "overflow_message": "検査パターン名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "patternKana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_disease_name_master": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "病名コードを入力してください。",
+      "overflow_message": "病名コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "sort_number": {
+      "length": 11,
+      "requierd_message": "",
+      "overflow_message": "表示順を11文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "表示名称を入力してください。",
+      "overflow_message": "表示名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_fee_management_master": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "名称を入力してください。",
+      "overflow_message": "名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "is_required": 0,
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_holiday_master": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "祝日名称を入力してください。",
+      "overflow_message": "祝日名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "month": {
+      "length": 2,
+      "requierd_message": "",
+      "overflow_message": "月を2文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "day": {
+      "length": 2,
+      "requierd_message": "",
+      "overflow_message": "日を2文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_other_facilities_master": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "名称を入力してください。",
+      "overflow_message": "名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_other_facilities_master_department": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "名称を入力してください。",
+      "overflow_message": "名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_other_facilities_master_doctor": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "名称を入力してください。",
+      "overflow_message": "名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_short": {
+      "length": 20,
+      "requierd_message": "略称を入力してください。",
+      "overflow_message": "略称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_prescription_set_master": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "セット名を入力してください。",
+      "overflow_message": "セット名を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名を入力してください。",
+      "overflow_message": "カナ名を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "set_id": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "セットIDを入力してください。",
+      "overflow_message": "セットIDを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "data_json": {
+      "is_required": 1,
+      "length": "",
+      "requierd_message": "薬剤を選択してください。",
+      "overflow_message": "",
+      "type_error_message": ""
+    },
+    "sort_order": {
+      "length": 10,
+      "requierd_message": "表示順を入力してください。",
+      "overflow_message": "表示順を10文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_injection_set_category": {
+    "code": {
+      "is_required": 1,
+      "length": 10,
+      "requierd_message": "分類コードを入力してください。",
+      "overflow_message": "分類コードを10文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "分類名称を入力してください。",
+      "overflow_message": "分類名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_injection_set": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "セット名称を入力してください。",
+      "overflow_message": "セット名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_terminal_master": {
+    "ip_addr": {
+      "is_required": 1,
+      "length": 15,
+      "requierd_message": "IPアドレスを入力してください。",
+      "overflow_message": "IPアドレスを15文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "authority": {
+    "name": {
+      "is_required": 1,
+      "length": 32,
+      "requierd_message": "名称を入力してください。",
+      "overflow_message": "名称を32文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "staff": {
+    "name": {
+      "is_required": 1,
+      "length": 32,
+      "requierd_message": "氏名を入力してください。",
+      "overflow_message": "氏名を32文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ氏名を入力してください。",
+      "overflow_message": "カナ氏名を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "signin_id": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "ログインIDを入力してください。",
+      "overflow_message": "ログインIDを20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "password": {
+      "is_required": 1,
+      "length": 30,
+      "requierd_message": "パスワードを入力してください。",
+      "overflow_message": "パスワードを30文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "password_confirm": {
+      "is_required": 1,
+      "length": 30,
+      "requierd_message": "パスワード(確認)を入力してください。",
+      "overflow_message": "パスワード(確認)を30文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_word_pattern": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "名称を入力してください。",
+      "overflow_message": "名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  },
+  "dial_word": {
+    "name": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "名称を入力してください。",
+      "overflow_message": "名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    },
+    "name_kana": {
+      "is_required": 1,
+      "length": 20,
+      "requierd_message": "カナ名称を入力してください。",
+      "overflow_message": "カナ名称を20文字以下で入力してください。",
+      "type_error_message": ""
+    }
+  }
+}

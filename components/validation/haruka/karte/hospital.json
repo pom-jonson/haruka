@@ -1,0 +1,239 @@
+{
+    "discharge_permit":{
+        "discharge_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"退院日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "outcome_reason_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"転帰理由を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "discharge_route_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"退院経路を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "free_comment":{
+            "is_required":0,
+            "length": "25",
+            "requierd_message":"",
+            "overflow_message": "フリーコメントは25文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "hospital_application":{
+        "disease_name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"入院病名を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "hospitalization_purpose_comment":{
+            "is_required":0,
+            "length": "25",
+            "requierd_message":"",
+            "overflow_message": "入院目的のフリーコメントを25文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "treatment_plan_comments":{
+            "is_required":0,
+            "length": "25",
+            "requierd_message":"",
+            "overflow_message": "治療計画のフリーコメントを25文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "surgery_name":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "手術名を100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "treatment_name":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "治療名を100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "inspection_name":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "検査名を100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "estimated_hospitalization_period_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"推定入院期間を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "desired_hospitalization_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"希望入院日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "first_ward_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"第1病棟を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "free_comment":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "フリーコメントを100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "main_doctor_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"主担当医を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "start_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事開始日を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "start_time_classification":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事時間区分を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "food_type_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "hospital_decision":{
+        "disease_name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"入院病名を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "hospitalization_purpose_comment":{
+            "is_required":0,
+            "length": "25",
+            "requierd_message":"",
+            "overflow_message": "入院目的のフリーコメントを25文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "discharge_plan_comment":{
+            "is_required":0,
+            "length": "25",
+            "requierd_message":"",
+            "overflow_message": "退院計画のフリーコメントを25文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "inspection_name":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "検査名を100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "surgery_name":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "手術名を100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "treatment_name":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "治療名を100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "estimated_hospitalization_period_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"推定入院期間を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "date_and_time_of_hospitalization":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"入院日時を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "first_ward_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"病棟/病室/病床を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "hospital_room_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"病棟/病室/病床を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "emergency_admission_comments":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "緊急入院時コメントを100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "main_doctor_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"主担当医を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "start_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事開始日を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "start_time_classification":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事時間区分を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "food_type_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"食事を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    }
+}

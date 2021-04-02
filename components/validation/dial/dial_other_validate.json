@@ -1,0 +1,99 @@
+{
+    "view_range_set":{
+        "range1_2":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲1を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "range2_1":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲2を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "range2_1":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲2を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "range2_2":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲2を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "range3_1":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲3を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "range3_2":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲3を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "range4_1":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲4を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "range4_2":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲4を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "range5_1":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"表示範囲5を正確に入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "guideline_p_c":{
+        "P_low":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"Pの下限値を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "Ca_low":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"補正Caの下限値を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "guideline_tsat":{
+        "TSAT_low":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"TSATの下限値を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "FERR_low":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"フェリチンの下限値を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    }
+}

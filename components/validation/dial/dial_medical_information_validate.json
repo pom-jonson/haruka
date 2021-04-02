@@ -1,0 +1,383 @@
+{
+    "infection":{
+        "infrection_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"名称を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"日付を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "note":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "備考は1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "contraindication":{
+        "contraindicant_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"名称を選択してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"日付を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "note":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "備考は1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "va_usage_history":{
+        "date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"日付を選択してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "va_title_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"VA名称を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "comment":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "コメントは1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "va_treatment_history":{
+        "date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"日付を選択してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "va_title_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"処置内容を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "comment":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "コメントは1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "medical_history_body":{
+        "directer_name":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"医師名を選択してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+	"write_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"日付を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "disease_codes":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"病名を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "past_history":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "既往歴は1000文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "disease_history":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "持病歴は1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "heart_input":{
+        "heart":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"心臓幅を入力してください。",
+            "overflow_message": "心臓幅は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "thorax":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"胸郭幅を入力してください。",
+            "overflow_message": "胸郭幅は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "chest_ratio":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"心胸比を入力してください。",
+            "overflow_message": "心胸比は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "comment":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "コメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "image_register":{
+        "file":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"画像を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    },
+    "basic_data":{
+        "before_pressure_max":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"血圧高（前）を入力してください。",
+            "overflow_message": "血圧高（前）は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "before_pressure_min":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"血圧低（前）を入力してください。",
+            "overflow_message": "血圧低（前）は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "before_pulse":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"脈拍（前）を入力してください。",
+            "overflow_message": "脈拍（前）は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "after_pressure_max":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"血圧高（後）を入力してください。",
+            "overflow_message": "血圧高（後）は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "after_pressure_min":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"血圧低（後）を入力してください。",
+            "overflow_message": "血圧低（後）は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "after_pulse":{
+            "is_required":1,
+            "length": "10",
+            "requierd_message":"脈拍（後）を入力してください。",
+            "overflow_message": "脈拍（後）は10文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "foot_care":{
+        "next_scheduled_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"次回予定日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "footwear":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "履物の種類は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "can_self_caregiver":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "ケアをする人は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "foot_care_assessment_1_text":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "アセスメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "foot_care_assessment_2_text":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "アセスメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "foot_care_assessment_3_text":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "アセスメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "foot_care_objective_1_text":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "看護目標は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "foot_care_objective_2_text":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "看護目標は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "foot_care_objective_3_text":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "看護目標は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "instructed_content_text_1":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "足の観察方法は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "instructed_content_text_2":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "履物については100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "instructed_content_text_3":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "日常生活の注意点は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "instructed_content_text_4":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "爪切りの方法は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "instructed_content_text_5":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "指導内容は100文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "insulin_body":{
+        "start_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"指示開始日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "insulin1":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"インスリンを選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "comment":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "コメントは1000文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "blood_glucose_sensor":{
+            "is_required":0,
+            "length": "20",
+            "requierd_message":"",
+            "overflow_message": "血糖測定用センサーは20文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "blood_glucose_measuring_needle":{
+            "is_required":0,
+            "length": "20",
+            "requierd_message":"",
+            "overflow_message": "血糖測定用針は20文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "Insulin_injection_needle":{
+            "is_required":0,
+            "length": "20",
+            "requierd_message":"",
+            "overflow_message": "インスリン注射用針は20文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "inspection_data":{
+        "value":{
+            "is_required":1,
+            "length": "20",
+            "requierd_message":"結果の値を入力してください。",
+            "overflow_message": "結果の値は20文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "value2":{
+            "is_required":1,
+            "length": "20",
+            "requierd_message":"結果の値を入力してください。",
+            "overflow_message": "結果の値は20文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "JCLExamUpload":{
+        "file":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"検査データファイルを選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        }
+    }
+}

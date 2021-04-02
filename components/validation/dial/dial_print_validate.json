@@ -1,0 +1,334 @@
+{
+    "dial_medical_info_doc":{
+        "other_facility_number":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"医療機関名を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "other_facilities_department":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"診療科を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "other_facilities_doctor":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"御担当医を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "disease_name":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"傷病名を入力してください。",
+            "overflow_message": "傷病名は100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"紹介目的を入力してください。",
+            "overflow_message": "紹介目的は100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "family_history":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"既往歴・家族歴を入力してください。",
+            "overflow_message": "既往歴・家族歴は100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "inspection_result":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"症状経過・検査結果を入力してください。",
+            "overflow_message": "症状経過・検査結果は100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "course_treatment":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"治療経過を入力してください。",
+            "overflow_message": "治療経過は100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "cur_prescription":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"現在の処方を入力してください。",
+            "overflow_message": "現在の処方は100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "remark":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"備考を入力してください。",
+            "overflow_message": "備考は100文字以下で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "dial_input_weight":{
+        "other_facility_number":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"医療機関名を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "other_facilities_department":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"診療科を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "other_facilities_doctor":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"御担当医を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "greeting":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"あいさつ文を入力してください。",
+            "overflow_message": "あいさつ文は100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "diagnostic":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"診断を入力してください。",
+            "overflow_message": "診断は100文字以下で入力してください。",
+            "type_error_message": ""
+        },
+        "note":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"＜記＞を入力してください。",
+            "overflow_message": "＜記＞は100文字以下で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "dial_nutrition_guide":{
+        "tall":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"身長を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "weight":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"体重を入力してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "guidance_date":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"指導日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "general_opinion":{
+            "is_required":0,
+            "length": "",
+            "requierd_message":"総合所見を入力してください。",
+            "overflow_message": "総合所見は100文字以下で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "medical_info_doc_set_regular":{
+        "disease_name_text":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "傷病名は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose1_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"紹介目的のボタン名を入力してください。",
+            "overflow_message": "紹介目的のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose1_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"紹介目的の文章を入力してください。",
+            "overflow_message": "紹介目的の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose2_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"紹介目的のボタン名を入力してください。",
+            "overflow_message": "紹介目的のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose2_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"紹介目的の文章を入力してください。",
+            "overflow_message": "紹介目的の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose3_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"紹介目的のボタン名を入力してください。",
+            "overflow_message": "紹介目的のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose3_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"紹介目的の文章を入力してください。",
+            "overflow_message": "紹介目的の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose4_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"紹介目的のボタン名を入力してください。",
+            "overflow_message": "紹介目的のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "introduction_purpose4_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"紹介目的の文章を入力してください。",
+            "overflow_message": "紹介目的の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "family_history_text":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "既往歴及び家族歴は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "inspection_result_text":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "症状経過及び検査結果は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "course_treatment_text":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "治療経過は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "cur_prescription_text":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "現在の処方は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "remark_text":{
+            "is_required":0,
+            "length": 100,
+            "requierd_message":"",
+            "overflow_message": "備考は100文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "intro_letter_set_regular":{
+        "greeting1_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"あいさつ文のボタン名を入力してください。",
+            "overflow_message": "あいさつ文のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "greeting1_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"あいさつ文の文章を入力してください。",
+            "overflow_message": "あいさつ文の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "greeting2_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"あいさつ文のボタン名を入力してください。",
+            "overflow_message": "あいさつ文のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "greeting2_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"あいさつ文の文章を入力してください。",
+            "overflow_message": "あいさつ文の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note1_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"＜記＞のボタン名を入力してください。",
+            "overflow_message": "＜記＞のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note1_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"＜記＞の文章を入力してください。",
+            "overflow_message": "＜記＞の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note2_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"＜記＞のボタン名を入力してください。",
+            "overflow_message": "＜記＞のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note2_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"＜記＞の文章を入力してください。",
+            "overflow_message": "＜記＞の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note3_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"＜記＞のボタン名を入力してください。",
+            "overflow_message": "＜記＞のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note3_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"＜記＞の文章を入力してください。",
+            "overflow_message": "＜記＞の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note4_btn":{
+            "is_required":1,
+            "length": 10,
+            "requierd_message":"＜記＞のボタン名を入力してください。",
+            "overflow_message": "＜記＞のボタン名は10文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "note4_text":{
+            "is_required":1,
+            "length": 100,
+            "requierd_message":"＜記＞の文章を入力してください。",
+            "overflow_message": "＜記＞の文章は100文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    }
+}

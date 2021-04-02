@@ -1,0 +1,48 @@
+{
+    "infection":{
+        "infrection_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"名称を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"日付を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "note":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "備考は1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "contraindication":{
+        "contraindicant_code":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"名称を選択してください",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"日付を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "note":{
+            "is_required":0,
+            "length": "1000",
+            "requierd_message":"",
+            "overflow_message": "備考は1000文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    }
+}

@@ -1,0 +1,2 @@
+
+export updatePassword from "./updatePassword";

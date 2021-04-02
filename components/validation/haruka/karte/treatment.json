@@ -1,0 +1,32 @@
+{
+    "output":{
+        "collected_date":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"処置日を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "barcode":{
+            "is_required":0,
+            "length": "20",
+            "requierd_message":"",
+            "overflow_message": "バーコードは20文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "comment":{
+            "is_required":0,
+            "length": "100",
+            "requierd_message":"",
+            "overflow_message": "フリーコメントは100文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "detail_json_array":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"",
+            "overflow_message": "内容を選択してください。",
+            "type_error_message": ""
+        }
+    }
+}

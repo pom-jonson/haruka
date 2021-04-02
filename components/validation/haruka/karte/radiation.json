@@ -1,0 +1,55 @@
+{
+    "radiation":{
+        "radiation_data":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"撮影項目を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "etc_comment":{
+            "is_required":0,
+            "length": 20,
+            "requierd_message":"",
+            "overflow_message": "主訴、臨床経過、検査目的、コメントは20文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "request_comment":{
+            "is_required":0,
+            "length": 20,
+            "requierd_message":"",
+            "overflow_message": "依頼コメントは20文字以内で入力してください。",
+            "type_error_message": ""
+        },
+        "sick_name":{
+            "is_required":0,
+            "length": 20,
+            "requierd_message":"",
+            "overflow_message": "病名は20文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    },
+    "other_shoot":{
+        "selected_kind_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"分類を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "selected_kind_detail_id":{
+            "is_required":1,
+            "length": "",
+            "requierd_message":"分類詳細を選択してください。",
+            "overflow_message": "",
+            "type_error_message": ""
+        },
+        "free_comment":{
+            "is_required":0,
+            "length": 25,
+            "requierd_message":"",
+            "overflow_message": "フリーコメントは全角25文字以内で入力してください。",
+            "type_error_message": ""
+        }
+    }
+}
