@@ -1,0 +1,5803 @@
+/* https://getbootstrap.com/docs/4.0/getting-started/theming/
+  https://react-bootstrap.github.io/getting-started/introduction/#stylesheets */
+@import "bootstrap/scss/bootstrap";
+@import "../../node_modules/react-datepicker/dist/react-datepicker.css";
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+  #header-icon-groups{
+    margin-left:75px;
+  }
+  #patient-head-info{
+    padding-top:0rem;
+  }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1680px) {
+  html {
+    font-size: 15px;
+  }
+  #patient-head-info{
+    padding-top:0.3rem;
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
+  html {
+    font-size: 14px;
+  }
+  #patient-head-info{
+    padding-top:0.5rem;
+  }
+}
+
+@media screen and (min-width: 1368px) and (max-width: 1440px) {
+  html {
+    font-size: 13px;
+  }
+  #patient-head-info{
+    padding-top:0.8rem;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1367px) {
+  html {
+    font-size: 12.5px;
+  }
+  #patient-head-info{
+    padding-top:1rem;
+  }
+}
+
+@media screen and  (max-width: 1299px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+textarea{
+  ime-mode: active;
+}
+input{
+  ime-mode: active;
+}
+input[inputmode="numeric"]{
+  ime-mode: inactive;
+}
+.numeric-input{
+  ime-mode: inactive;
+}
+input[type="number"]{
+  ime-mode: inactive;
+}
+.flex {
+  display: flex;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.disabled-general {
+  opacity: 0.7;
+  background: lightgray !important;
+  cursor:auto!important;
+}
+.required_field {
+  background-color: #FFE3E8 !important;
+}
+.red_border {
+  border:3px solid red !important;
+  margin-left:0px!important;
+}
+.transparent-border{
+  border:3px solid transparent;
+  margin-left:-3px;
+}
+.med-modal {
+  overflow: initial;
+  height: calc(100vh);
+
+  .modal-dialog {
+    height: 100%;
+    margin: 0px auto;
+    outline: none;
+
+    .modal-content {
+      max-height: 80vh;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      margin: auto;
+
+      .modal-header {
+        display: block;
+        position: relative;
+        height: 65px;
+        min-height: 65px;
+        .close {
+          position: absolute;
+          right: 10px;
+          top: 22px;
+        }
+      }
+
+      .modal-body {
+        overflow: hidden;
+        .categoryContent{
+          height: calc(100% - 60px) !important;
+        }
+
+        ul {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.karte-status-modal{
+  .modal-content {
+    max-height: 50vh !important;
+  }
+}
+
+.alert-modal {
+  top: 0;
+  .modal-dialog {
+    outline: none !important;
+    max-width: 50vw;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      width: 50vw;
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 90vh;
+      }
+      .modal-footer{
+        justify-content: flex-end!important;
+        background-color: rgb(240, 240, 240);
+        padding-right: 50px;
+        button {
+          border: 1px solid rgb(200, 200, 200);
+          background-color: rgb(225, 225, 225);
+          border-radius: 4px;
+        }
+        .focus {
+          border: 2px solid #10aae1 !important;
+        }
+        button span {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.system-modal {
+  margin-top: 30vh;
+  .modal-content {
+    border-radius: 0;
+
+    .modal-body {
+      padding: 25px 50px 50px 50px;
+    }
+  }
+}
+
+.system-alert-modal {
+  margin-top: 30vh;
+  z-index: 1050;
+  .modal-content {
+    border-radius: 0;
+
+    .modal-body {
+      padding: 25px 50px 50px 50px;
+    }
+  }
+}
+.system-confirm {
+  top:0!important;
+  margin-top: 30vh;
+  .modal-content {
+    border-radius: 0;
+
+    .modal-body {
+      padding: 25px 50px 50px 50px;
+    }
+    .modal-footer {
+      .focus {
+        border: 1px solid #10aae1 !important;
+      }
+    }
+  }
+}
+
+.no-top-modal{
+  top:0!important;
+  margin-top: 30vh;
+}
+
+.inspectionPast-modal {
+  .modal-content {
+    border: 1px solid black;
+    margin: 0 auto;
+    .modal-header {
+      padding: 10px 10px;
+      .modal-title {
+        font-size: 18px;
+      }
+    }
+    .modal-body {
+      button {
+        float: right;
+      }
+      #btnPdfDownload {
+        float: left;
+      }
+    }
+  }
+}
+
+.prescription_confirm_modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 800px;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    min-width: 850px;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      width: 800px;
+      .modal-body {
+        min-width: 800px;
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 90vh;
+      }
+      .modal-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.inspectionDetail-modal {
+  .modal-dialog {
+    max-width: 850px;
+  }
+  .modal-body {
+    .div-name {
+      overflow: hidden;
+    }
+    .gene-name {
+      float: right;
+    }
+    .generic-name {
+      font-size: 14px;
+      color: blue;
+      cursor: pointer;
+    }
+    .name {
+      float: left;
+    }
+    .title-1 {
+      width: 80px;
+      float: left;
+      text-align: center;
+    }
+    .title-1:hover,
+    .title-2:hover,
+    .title-3:hover {
+      background: #a0ebff;
+      cursor: pointer;
+    }
+    .title-2 {
+      width: 160px;
+      float: left;
+      text-align: center;
+    }
+    .title-3 {
+      width: 80px;
+      float: left;
+      text-align: center;
+    }
+    .mediicine_detail {
+      clear: both;
+      overflow-y: auto;
+      max-height: 60vh;
+      border: 1px solid #ddd;
+      padding-top: 5px;
+      margin-top: 3px;
+    }
+    button {
+      float: right;
+      margin-top: 10px;
+    }
+    #btnPdfDownload {
+      float: left;
+    }
+    .div-usage {
+      table tr td:first-child {
+        border-left-color: black;
+      }
+      table tr td:last-child {
+        border-right-color: black;
+      }
+      table tr:last-child {
+        td {
+          border-bottom-color: black;
+        }
+      }
+    }
+  }
+}
+
+.genericNameList-modal {
+  .modal-dialog {
+    max-width: 850px;
+  }
+  .modal-body {
+    .div-generic-name {
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+    .div-name {
+      overflow: hidden;
+    }
+    .gene-name {
+      float: right;
+    }
+    .name {
+      float: left;
+    }
+    .title-1 {
+      width: 80px;
+      float: left;
+      text-align: center;
+    }
+    .title-1:hover,
+    .title-2:hover,
+    .title-3:hover {
+      background: #a0ebff;
+      cursor: pointer;
+    }
+    .title-2 {
+      width: 160px;
+      float: left;
+      text-align: center;
+    }
+    .title-3 {
+      width: 80px;
+      float: left;
+      text-align: center;
+    }
+    .mediicine_detail {
+      clear: both;
+      overflow-y: auto;
+      max-height: 60vh;
+      border: 1px solid #ddd;
+      padding-top: 5px;
+      margin-top: 3px;
+    }
+    button {
+      float: right;
+      margin-top: 10px;
+    }
+    #btnPdfDownload {
+      float: left;
+    }
+    .div-usage {
+      table tr td:first-child {
+        border-left-color: black;
+      }
+      table tr td:last-child {
+        border-right-color: black;
+      }
+      table tr:last-child {
+        td {
+          border-bottom-color: black;
+        }
+      }
+    }
+  }
+}
+
+.disease-modal {
+  margin-top: 30vh;
+  .modal-dialog {
+    max-width: 620px;
+  }
+  .modal-content {
+    border: 4px solid rgb(237, 28, 36);
+    border-radius: 0;
+
+    .modal-body {
+      padding: 25px 50px 50px 50px;
+    }
+    .modal-footer {
+      background-color: rgb(240, 240, 240);
+      padding-right: 50px;
+      button {
+        border: 1px solid rgb(200, 200, 200);
+        background-color: rgb(225, 225, 225);
+        border-radius: 4px;
+      }
+      .focus {
+        border: 1px solid #10aae1 !important;
+      }
+      button span {
+        color: black;
+      }
+    }
+  }
+}
+
+#notconsented_injection_dlg{
+  #injection_selection_wrapper{
+    overflow-y: auto !important;
+    max-height: calc(100vh - 20rem);
+  }
+}
+
+.usage-med-alert-modal {
+  .modal-content {
+    border: 4px solid #ed1c24 !important;
+    border-radius: 0;
+  }
+  .modal-footer {
+    background-color: rgb(240, 240, 240);
+    padding-right: 50px;
+    button {
+      border: 1px solid rgb(200, 200, 200);
+      background-color: rgb(225, 225, 225);
+      border-radius: 4px;
+    }
+    .focus {
+      border: 1px solid #10aae1 !important;
+    }
+    button span {
+      color: black;
+    }
+  }
+}
+
+.usage-alert-modal {
+  margin-top: 30vh;
+  .modal-dialog {
+    max-width: 620px;
+  }
+  .modal-content {
+    border-radius: 0;
+    .modal-body {
+      padding: 25px 50px 50px 50px;
+    }
+    .modal-footer {
+      .btnDetail {
+        float: left;
+      }
+      .focus {
+        border: 1px solid #10aae1 !important;
+      }
+    }
+  }
+}
+.not-consented-style{
+top: 2%;
+.modal-dialog {
+  margin: 0.25rem auto;
+  .modal-content {
+    .modal-body {
+      .row{
+        width: 100% !important;
+      }
+    }
+  }
+}
+}
+.NotConsented {
+  .modal-dialog{
+    max-width: 1100px!important;
+    width:1100px;
+  }
+  .modal-content {
+    border-radius: 0;
+    max-width:1100px!important;
+    .modal-body {
+      overflow-y: auto;
+      max-height: 80vh;
+      #medicine_selection_wrapper {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        border-top: none;
+        overflow-y: inherit;
+      }
+      #injection_selection_wrapper {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        border-top: none;
+        overflow-y: inherit;
+      }
+    }
+  }
+}
+.register-set-modal {
+  overflow: initial;
+  height: calc(100vh);
+  top: -8%;
+
+  .modal-dialog {
+    height: 100%;
+    margin: 0px auto;
+    outline: none;
+
+    .modal-content {
+      max-height: 258px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      margin: auto;
+
+      .modal-header {
+        display: block;
+        position: relative;
+        height: 65px;
+        min-height: 65px;
+        .close {
+          position: absolute;
+          right: 10px;
+          top: 22px;
+        }
+      }
+
+      .modal-body {
+        overflow: hidden;
+        max-height: 18vh;
+        ul {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+.concurrent-modal {
+  overflow: initial;
+  height: calc(100vh);
+
+  .modal-dialog {
+    height: 100%;
+    margin: 0px auto;
+    outline: none;
+
+    .modal-content {
+      max-height: 80vh;
+      top: 25vh;
+      width: 70%;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      margin: auto;
+
+      .modal-header {
+        display: block;
+        position: relative;
+        height: 65px;
+        min-height: 65px;
+        .close {
+          position: absolute;
+          right: 10px;
+          top: 22px;
+        }
+      }
+
+      .modal-body {
+        overflow: hidden;
+
+        ul {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.patient-exam-modal {
+  overflow: initial;
+  height: calc(100vh);
+  width: calc(100vw);
+
+  .modal-dialog {
+    height: 100%;
+    margin: 0px auto;
+    outline: none;
+    max-width: 81vw;
+
+    .modal-content {
+      max-height: 100vh;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      margin: auto;
+
+      .modal-header {
+        display: block;
+        position: relative;
+        height: 3.5rem;
+        min-height: 3.5rem;
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+      }
+      
+    }
+  }
+}
+
+.batch-do-prescription-modal {
+  overflow: initial;
+  height: calc(100vh);
+  width: calc(100vw);
+
+  .modal-dialog {
+    height: 100%;
+    margin: 0px auto;
+    outline: none;
+    max-width: 90vw;
+    .modal-body {
+      overflow: hidden;
+    }
+
+    .modal-content {
+      max-height: 94vh;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      margin: auto;
+
+      .modal-header {
+        display: block;
+        position: relative;
+        height: 3.5rem;
+        min-height: 3.5rem;
+      }
+    }
+  }
+}
+
+.radiation-modal {
+  z-index: 1040;
+  .modal-body {
+    padding-bottom: 0;
+  }
+}
+
+.shema-modal-design{
+  .modal-dialog {
+    .modal-header {
+      .shema-btn{
+        span{
+          margin-right: 0px !important;          
+          float: none !important;
+        }
+        .red-btn {
+          border: 2px solid #cc0000;
+          background: #cc0000 !important;
+          span {
+            color: #ffffff !important;
+          }
+        }
+        .red-btn:hover {
+          background: #e81123 !important;
+          span {
+            color: #ffffff !important;
+          }
+        }
+      }
+    }    
+  }
+}
+
+.physiological-modal {
+  .modal-dialog {
+    .modal-header {
+      .shema-btn{
+        display: inline-block !important;
+        line-height: 1.5rem;
+        float: right;
+          button{
+          margin-right: 0px;
+        }
+      }
+    }
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+
+.select-examination-modal{
+  .modal-header{
+    padding: 17px;
+  }
+  .modal-body{
+    .date-area{
+      font-size: 1rem;
+      text-align: left;
+      width: 8rem !important;
+      padding-left: 4px;
+      .react-datepicker__input-container {
+        input {
+          padding-left: 0;
+        }
+      }
+    }
+    .no-span-border{
+      border:none !important;
+    }
+    .variable-area {
+      width: 100%;
+    }
+    .time-area{
+      font-size: 1rem;
+      width: 5rem !important;
+    }
+    .order-comment{
+      margin-top: 0.25rem !important;
+    }
+    .free-comment{
+      margin-top: 0.25rem !important;
+    }
+    .categoryName{
+      height: 30px !important;
+      span{
+        line-height: 2rem !important;
+      }
+    }
+    .exam-urgent{
+      text-align: center !important;
+      display: flex !important;
+      align-items: center !important;
+      input{
+        margin-right: 0px !important;
+        top: 0px;
+      }
+      label{
+        width: 100% !important;
+      }
+    }
+    .preset-title {
+      background: rgb(160, 235, 255) !important;
+      height: 30px !important;
+      line-height: 30px;
+      padding: 0;
+    }
+    .categoryContent {
+      width: 50%;
+      float: left;
+      ul {
+        margin-left: 5px;
+      }
+      .exam-list {
+        margin-left: 10px;
+        overflow-y: auto;
+        height: calc(100% - 58px) !important;
+        border: solid 1px #888888;
+        label{
+          font-size: 0.8rem;
+        }
+      }
+      .tab-exam-list{
+        margin-left: 10px;
+        overflow-y: auto;
+        height: calc(100% - 31px) !important;
+        border: solid 1px #888888;
+        label{
+          font-size: 0.8rem;
+        }
+      }
+      .exam-list-other{
+        height: calc(100% - 9rem - 58px) !important;
+      }
+      .tab-exam-list-other{
+        height: calc(100% - 9rem - 31px) !important;
+      }
+    }
+    .selected-items {
+      width: 100%;
+      height: calc(100% - 56px);
+    }
+    .del-btn-group {
+      margin-left: 7px;
+      padding-bottom: 36px !important;
+    }
+    .del-btn-group-other {
+      display: flex;      
+      justify-content: space-between;
+      padding-bottom: 5px !important;
+    }
+    .clear-other{
+      margin-right: 0px !important;
+      height: 2rem !important;
+      line-height: 2rem !important;
+    }
+  }
+}
+.exa-modal {
+  overflow: initial;
+  height: calc(100vh);
+  width: calc(100vw);
+  .active {
+    background-color: rgb(160, 235, 255);
+  }
+  button {
+    padding: 5px;
+  }
+  input {
+    height: 30px !important;
+  }
+  label {
+    line-height: 19px;
+  }
+  .react-datepicker__navigation{
+    padding:0px;
+  }
+
+  .modal-dialog {
+    height: 100%;
+    margin: 0px auto;
+    outline: none;
+    max-width: 80vw;
+
+    .modal-content {
+      max-height: 94vh;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      margin: auto;
+
+      .modal-header {
+        display: block;
+        position: relative;
+        height: 55px;
+        min-height: 55px;
+        span {
+          float: left;
+          margin-right: 10px;
+        }
+        ul {
+          margin-left: 249px;
+          margin-top: 6px;
+          position: absolute;
+          li{
+            font-size:14px;
+          }
+        }
+        .close {
+          position: absolute;
+          right: 10px;
+          top: 22px;
+        }
+      }
+
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        font-size: 1rem;
+        .hankaku-eng-num-input {
+          ime-mode: inactive;
+          input {
+            ime-mode: inactive;
+          }
+          textarea {
+            ime-mode: inactive;
+          }
+        }
+        .full-width-input {
+          ime-mode: active;
+          input {
+            ime-mode: active
+          }
+          textarea {
+            ime-mode: active;
+          }
+        }
+        .flex {
+          display: flex;
+        }
+        button{
+          span{
+            font-size: 0.875rem;
+          }
+        }
+        label{
+          font-size:1rem;
+        }
+        ul.react-datepicker__time-list {
+          width: 100%;
+        }
+        .react-datepicker__time-container
+          .react-datepicker__time
+          .react-datepicker__time-box {
+          width: 100px;
+        }
+        .react-datepicker__time-container {
+          width: 100px;
+          margin-bottom: 5px;
+        }
+        .readline {
+          border: solid 1px red;
+        }
+        .btn-group {
+          display: block;
+          button {
+            padding: 0.2rem 0.25rem;
+            width: 14rem;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+          .search-btn {
+            float: right;
+            width: 6rem;
+          }
+        }
+        .collect {
+          width: calc(100% - 5rem);
+          display: inline-block;
+          label {
+            line-height: 30px;
+          }
+          button {
+            float: left;
+            margin-left: 10px;
+            height: 30px;
+            padding: 0;DialSelectFacilityModal
+            span {
+              line-height: 30px;
+              font-size: 0.875rem;
+            }            
+          }
+          .react-datepicker button{
+            height: 10px;
+          }
+          .date-area{
+            width: 6rem;
+          }
+          .time-area{
+            width: 4rem;
+          }
+        }
+        .collect-other{
+          button{
+            min-width: 6rem;
+          }
+        }
+        .insurance {
+          float: right;
+          text-align: right;
+          width: 5rem;
+          font-size: 1rem;
+          select {
+            width: 8rem;
+            height: 27px;
+          }
+        }
+        .insurance-other{
+          float: right;    
+          height: 30px;
+          line-height: 30px;      
+          width: 5rem;
+          font-size: 1rem;
+          select {
+            width: 8rem;
+            height: 27px;
+          }
+        }
+        .selected-instruction-items {
+          width: calc(100% - 7px);
+          height: 50%;
+          margin-left: 7px;
+          .exam-urgent {
+            label {
+              width: 50px;
+              text-align: center;
+              margin-right: 0;
+            }
+            input {
+              height: 15px !important;
+              width: 15px !important;
+            }
+          }
+          .table-header {
+            display: flex;
+            width: calc(100% - 17px);
+            height: 2rem;
+            line-height: 1.6rem;
+          }
+          .table-header span {
+            text-align: center;
+            background: #a0ebff;
+            display: block;
+            float: left;
+            border-top: 1px solid #dee2e6;
+            position: sticky;
+            font-size: 1rem;
+          }
+          .table-body{
+            overflow-y:scroll;
+            height: calc(100% - 1.4rem);
+            border: solid 1px lightgray;
+          }
+          .table-content {
+            overflow-y: auto;
+          }
+          span {
+            float: left;
+            padding: 0.2rem;
+            font-size: 0.9rem;
+            border-left: 1px solid #dee2e6;
+            display: block;
+          }
+          .exam-name {
+            float: left;
+            width: 80%;
+            border-left:none;
+            padding: 0;
+            input {
+              height: 2rem !important;
+              width: 100%;
+            }
+          }
+          .exam-material {
+            width: 20%;
+            border-right: 1px solid #dee2e6;
+          }
+        }
+        .selected-exam {
+          width: 30%;
+          height: 60%;
+          float: left;
+          .del-btn-group {
+            margin-left: 7px;
+            padding-bottom: 9%;
+          }
+          .min-btn{
+            button{
+              min-width: 5rem;
+            }
+          }
+          .min-btn-other{
+            button{
+              min-width: 5rem;
+            }
+          }
+          button {
+            float: left;
+            margin-left: 7px;
+            min-width: 90px;
+            span {
+              font-size: 0.875rem;
+            }
+          }
+          .selected-items {
+            width: calc(100% - 7px);
+            height: calc(100% - 60px);
+            margin-left: 7px;
+            overflow-y: hidden;
+            border:1px solid #dee2e6;
+            .div-row {
+              cursor: pointer;
+              display: flex;
+              border-bottom: solid 1px #dee2e6;
+            }
+            .selected-item {
+              background: lightblue !important;
+            }
+            .no-select {
+              font-size: 0.875rem;
+              border: 1px solid #dee2e6;
+              padding-left: 5px;
+            }
+            .table-header {
+              display: flex;
+              width: calc(100% - 17px);
+              height: 2rem;
+              line-height: 1.6rem;
+            }
+            .table-header span {
+              text-align: center;
+              background: #a0ebff;
+              display: block;
+              float: left;
+              border-top: 1px solid #dee2e6;
+              position: sticky;
+              font-size: 1rem;
+            }
+            .table-body{
+              overflow-y:scroll;
+              height: calc(100% - 2rem);
+            }
+            .table-content {
+              overflow-y: auto;
+            }
+            .exam-name {
+              float: left;
+              width: 60%;
+              border-left:none;
+            }
+            .exam-material {
+              width: 20%;
+              border-right: 1px solid #dee2e6;
+            }
+            span {
+              float: left;
+              padding: 0.2rem;
+              font-size: 0.9rem;
+              border-left: 1px solid #dee2e6;
+              // border-bottom: 1px solid #dee2e6;
+              display: block;
+            }
+            .exam-urgent {
+              label {
+                width: 50px;
+                text-align: center;
+                margin-right: 0;
+              }
+              input {
+                height: 15px !important;
+                width: 15px !important;
+              }
+            }
+          }
+
+          .table-scroll {
+            overflow-y: auto;
+          }
+        }
+
+        .preset {
+          width: 20%;
+          float: left;
+          border: 1px solid rgb(136, 136, 136);
+          .preset-title {
+            background: rgb(239, 239, 239);
+            padding:0px;
+            text-align: center;
+            border-bottom: 1px solid rgb(136, 136, 136);
+          }
+          .preset-content {
+            display: grid;
+            padding-top: 5px;
+            overflow-y: auto;
+            height: calc(100% - 30px);
+            label {
+              line-height: 19px;
+            }
+          }
+        }
+        .preset-other{
+          width: 30%;
+        }
+        .categoryContent {
+          width: 50%;
+          float: left;
+          ul {
+            margin-left: 5px;
+          }
+          .exam-list {
+            margin-left: 10px;
+            overflow-y: auto;
+            height: calc(100% - 47px);
+            border: solid 1px #888888;
+            label{
+              font-size: 0.8rem;
+            }
+          }
+        }        
+        .comment {
+          .cMcyKA {
+            input {
+              width: 15px !important;
+              height: 15px !important;
+            }
+          }
+          width: 30%;
+          padding-left: 10px;
+          .clear {
+            padding: 0;
+            min-width: 30px;
+            height: 30px !important;
+            margin-left: 0.25rem;
+            padding-left: 2px !important;
+            line-height: 30px;
+            span {
+              font-size: 1rem !important;
+            }
+          }
+          .clear-other{
+            margin-right: 0px !important;
+            height: 2rem !important;
+            line-height: 2rem !important;
+          }
+          button {
+            font-size: 11px;
+          }
+          .order-comment {
+            margin-top: 10px;
+            display: flex;
+            margin-bottom: 2px;
+            button {
+              margin-right: 10px;
+              span {
+                font-size: 11px;
+              }
+            }
+            label {
+              width: 8rem;
+            }
+            input {
+              font-size: 13px;
+              width: calc(100% - 155px);
+            }
+          }
+          .free-comment {
+            margin-top: 10px;
+            display: inline-flex;
+            width: 100%;
+            label {
+              width: 8rem;
+            }
+            button {
+              margin-right: 10px;
+              height: 28px;
+              padding: 0;
+              span {
+                font-size: 11px;
+              }
+            }
+            textarea {
+              font-size: 13px;
+              height: 37px;
+              width: calc(100% - 155px);
+            }
+          }
+        }
+        .block-area {
+          border: 1px solid #aaa;
+          margin-top: 20px;
+          padding: 10px;
+          position: relative;
+          label {
+            font-size: 14px;
+            width: auto;
+            input {
+              height: 15px !important;
+            }
+          }
+        }
+        .block-title {
+          position: absolute;
+          top: -12px;
+          left: 10px;
+          font-size: 18px;
+          background-color: white;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        .div-style1 {
+          padding: 20px;
+        }
+        .categoryName {
+          background: rgb(160, 235, 255);
+          text-align: center;
+          border: 1px solid #dee2e6;
+          border-color: rgb(136, 136, 136);
+          margin-left: 8px;
+          min-height:2rem;
+        }
+        ul {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.preset-modal {
+  overflow: initial;
+  height: calc(100vh);
+
+  .modal-dialog {
+    height: 100%;
+    margin: 0px auto;
+    outline: none;
+
+    .modal-content {
+      max-height: 80vh;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      margin: auto;
+
+      .modal-header {
+        display: block;
+        position: relative;
+        height: 65px;
+        min-height: 65px;
+        .close {
+          position: absolute;
+          right: 10px;
+          top: 22px;
+        }
+      }
+
+      .modal-body {
+        overflow: hidden;
+        .preset {
+          border: 1px solid #dee2e6;
+          height: 100%;
+          .preset-content {
+            overflow-y: auto;
+            max-height: 100%;
+            margin-left: 10px;
+            margin-top: 3px;
+          }
+        }
+        ul {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.haruka-preset-modal{
+  .preset-content {
+    overflow-y: auto;
+    max-height: 100%;
+    margin-left: 10px;
+    margin-top: 3px;
+    height: 55vh !important;
+  }
+}
+.login-modal {
+  top: 30%;
+  .modal-header {
+    .modal-title {
+      font-size: 14px;
+    }
+  }
+  .modal-body{
+    div{
+      font-size: 1rem !important;
+    }
+    input{
+      font-size: 1rem !important;
+      ime-mode: inactive;
+    }
+  }
+
+  .alert-danger {
+    font-size: 14px;
+  }
+}
+.movelist-modal {
+  top: 20%;
+  .modal-title {
+    font-size: 24px;
+  }
+  .modal-body {
+    label {
+      font-size: 1rem;
+      width: 6rem;
+    }
+    textarea {
+      width: 100%;
+    }
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+.with-btn-modal {
+	.modal-header {
+		border: none;
+		color: #f3e9e9;
+		background: #302f2f;
+		padding: 0.5rem 1rem;
+		border-radius: 0;
+		.modal-title {
+			font-size: 24px;
+		}
+		.close {
+			color: white;
+			font-weight: 100;
+		}
+	}
+}
+.master-modal {
+  top: 10%;
+  .modal-header {
+    border: none;
+    color: #f3e9e9;
+    background: #302f2f;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    .modal-title {
+      font-size: 24px;
+    }
+    .close {
+      color: white;
+      font-weight: 100;
+    }
+  }
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    border-radius: 0;
+    width: 600px;
+  }
+  .modal-footer {
+    // justify-content: end;
+    width: 100%;
+    button {
+      border-radius: 0.25rem;
+      background: rgb(105, 200, 225);
+      border: none;
+      min-width: 9rem;
+      span {
+        color: white;
+        font-size: 1.25rem;
+        font-weight: normal;
+      }
+    }    
+    .left-btn {
+      // position: absolute;
+      // bottom: 1rem;
+      // left: 1.25rem;
+      button {
+        margin-right: 0.5rem;
+      }
+    }
+    .right-btn {
+      display: flex;
+      // position: absolute;
+      // right: 1.25rem;
+      // bottom: 1rem;
+      button {
+        margin-left: 0.5rem;
+      }
+    }
+    .delete-btn {
+      border: solid 2px #4285f4;
+      background: #ffffff;
+      span {
+        color: #4285f4;
+      }
+    }
+  }
+  .delete-btn:hover {
+    background: #4285f4;
+    span {
+      color: #ffffff;
+    }
+  }
+  .add-btn {
+    background: #cc0000;
+    span {
+      color: #ffffff;
+    }
+  }
+  .add-btn:hover {
+    background: #e81123;
+    span {
+      color: #ffffff;
+    }
+  }
+  .change-btn {
+    background: #cc0000;
+    span {
+      color: #ffffff;
+    }
+  }
+  .change-btn:hover {
+    background: #e81123;
+    span {
+      color: #ffffff;
+    }
+  }
+  .red-btn {
+    background: #cc0000;
+    border:2px solid #cc0000;
+    span {
+      color: #ffffff;
+    }
+  }
+  .red-btn:hover {
+    background: #e81123;
+    span {
+      color: #ffffff;
+    }
+  }
+  .cancel-btn {
+    border: solid 2px #000000;
+    background: #ffffff;
+    span {
+      color: #000000;
+    }
+  }
+  .cancel-btn:hover {
+    background: #ffffff;
+    border: solid 2px #7e7e7e;
+    span {
+      color: #7e7e7e;
+    }
+  }
+}
+
+.windows-alert-message{
+  .modal-header {
+    height: 52px;
+    border: none;
+    color: #f3e9e9;
+    background: #302f2f;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    .modal-title {
+      font-size: 24px;
+    }
+    .close {
+      color: white;
+      font-weight: 100;
+    }
+  }
+  .modal-footer {
+    button {
+      border-radius: 0.25rem;
+      background: rgb(105, 200, 225);
+      border: none;
+      span {
+        color: white;
+        font-size: 1.25rem;
+      }
+    }
+    button:hover {
+      background: rgb(38, 159, 191);
+    }
+  }
+}
+.inspection-pattern-list-modal {
+  .modal-dialog {
+    max-width: 900px;
+  }
+  .modal-content {
+    border-radius: 0;
+    width: 900px;
+  }
+}
+
+.master-facility-modal {
+  top: 15%;
+  width: 900px;
+  height: 600px;
+  overflow-y: auto;
+  .modal-header {
+    border: none;
+    color: #f3e9e9;
+    background: #302f2f;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    .modal-title {
+      font-size: 24px;
+    }
+    .close {
+      color: white;
+      font-weight: 100;
+    }
+  }
+  .modal-content {
+    border-radius: 0;
+    width: 100%;
+  }
+}
+
+.search-patient-modal {
+  top: 40px;
+  width: 300px;
+  .modal-content {
+    border-radius: 0;
+    width: auto;
+    .modal-body {
+      background: #383535;
+      color: #aaa !important;
+    }
+  }
+}
+
+.add-contact-modal {
+  top: 15%;
+  .modal-dialog {
+    max-width: 60rem;
+    max-height: 67vh;
+  }
+  .modal-content {
+    border-radius: 0;
+    width: 60rem;
+    height: 67vh;
+  }
+  .modal-body {
+    height:100%;
+    overflow: hidden;
+  }
+}
+.history-not-done-info-modal{
+  top:5%;
+  .modal-dialog {
+    max-width: 1000px;
+    max-height: 94vh;
+  }
+  .modal-content {
+    width: 65rem;
+    height: 80vh;
+  }
+  .modal-footer{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    // button{
+    //   padding-top:0.25rem;
+    //   padding-bottom:0.25rem;
+    // }
+  }
+}
+.history-info-modal {
+  top:5%;
+  .modal-dialog {
+    max-width: 1000px;
+    max-height: 94vh;
+  }
+  .modal-content {
+    width: 1000px;
+    height: 700px;
+  }
+  .modal-footer{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    // button{
+    //   padding-top:0.25rem;
+    //   padding-bottom:0.25rem;
+    // }
+  }
+}
+
+.patient-infomation-modal {
+  .modal-content {
+    width: 500px;
+  }
+}
+
+.usage-modal {
+  .modal-content {
+    width: 700px;
+  }
+}
+
+.image_genre-modal {
+  .modal-content {
+    width: 670px;
+  }
+}
+.general-setting-modal {
+  .modal-content {
+    width: 900px;
+  }
+  .modal-dialog {
+    max-width: 900px;
+  }
+}
+.facility {
+  width: 20%;
+  float: left;
+  border: 1px solid rgb(136, 136, 136);
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  .facility-title {
+    background: rgb(239, 239, 239);
+    padding: 3px 0px;
+    text-align: center;
+    border-bottom: 1px solid rgb(136, 136, 136);
+  }
+  .facility-content {
+    display: grid;
+    padding: 5px 10px 10px 10px;
+    label {
+      line-height: 19px;
+    }
+  }
+}
+.inspection-pattern-modal {
+  top: 20%;
+  .modal-header {
+    border: none;
+    color: #f3e9e9;
+    background: #302f2f;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    .close {
+      color: white;
+      font-weight: 100;
+    }
+  }
+  .modal-content {
+    border-radius: 0;
+  }
+}
+.medicine-modal {
+  .modal-dialog {
+    top: 10%;
+    max-width: 680px;
+  }
+  .modal-content {
+    width: 680px;
+  }
+}
+#edit-third-layer-modal{
+  top: 4%;
+}
+.hospital-disease-modal {
+  .modal-dialog {
+    top: 10%;
+    max-width: 50rem;
+  }
+  .modal-content {
+    width: 50rem;
+  }
+}
+.function-item-modal {
+  .modal-dialog {
+    top: 8%;
+    max-width: 800px;
+  }
+  .modal-content {
+    width: 800px;
+  }
+}
+.patient-modal {
+  top: 7%;
+  width: 500px;
+  margin-left: 20px;
+  .modal-content {
+    width: auto;
+    .modal-body {
+      background: #383535;
+      color: #aaa !important;
+      padding:12px!important;
+    }
+    .modal-header {
+      background: rgb(9, 147, 228);
+    }
+  }
+}
+.staff-modal {
+  .footer {
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+    button {
+      margin-left: 180px;
+    }
+  }
+  left: 100px;
+  .modal-content {
+    width: 500px;
+  }
+}
+
+.staff-time-modal {
+  .footer {
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+    button {
+      margin-right: 0px !important;
+    }
+  }
+  left: 100px;
+  .modal-content {
+    width: 500px;
+  }
+}
+
+.modal-w-700 {
+  left: 0px;
+  .modal-dialog {
+    max-width: 800px;
+  }
+  .modal-content {
+    width: 700px;
+    .hvMNwk {
+      input {
+        width: 460px;
+      }
+    }
+  }
+}
+
+.dailysis-schedule-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+    .modal-body {
+      height: calc(100% - 40px);
+      width: 100%;
+    }
+  }
+  // .modal-body {
+    // overflow-y: hidden;
+  // }
+}
+.measure-modal {
+  .modal-dialog {
+    max-width: 98vw;
+  }
+  .modal-content {
+    width: 98vw;
+  }
+}
+
+//.measure-modal {
+//  top: 15%;
+//  .modal-dialog {
+//    max-width: 70vw;
+//    max-height: 50vh;
+//  }
+//  .modal-content {
+//    width: 70vw;
+//    height: 50vh;
+//  }
+//}
+
+.dailysis-prescription-modal {
+  top:5%!important;
+  .modal-dialog {
+    max-width: 800px;
+  }
+  .modal-content {
+    width: 800px;
+    .modal-body{
+      height: 43rem;
+    }
+  }
+}
+.done-modal {
+  .modal-dialog {
+    max-width: 65vw;
+  }
+  .modal-content {
+    width: 65vw;
+  }
+}
+.not-done-list-modal{
+  top:10%;
+  .modal-dialog {   
+    max-width: 35vw;
+  }
+}
+.guidance-done-modal {
+  top:10%;
+  .modal-dialog {
+    max-height: 70vh;
+    max-width: 35vw;
+  }
+  .modal-content {
+    height: 75vh;
+    width: 35vw;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.injection-increase-period-modal {
+  top:10%;
+  .modal-dialog {
+    max-height: 70vh;
+    max-width: 35vw;
+  }
+  .modal-content {
+    height: 76vh;
+    width: 35vw;
+  }  
+}
+.multi-move-modal {
+  top: calc(50vh - 380px)!important;
+  .modal-dialog {
+    max-width: 760px;
+  }
+  .modal-content {
+    width: 760px;
+  }
+}
+.dewater-history-modal {
+  top: 3%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 85vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 85vh;
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+.managefee-modal {
+  .modal-dialog {
+    max-width: 950px;
+  }
+  .modal-content {
+    width: 950px;
+  }
+}
+.wordPattern-modal {
+  .modal-dialog {
+    max-width: 700px;
+  }
+  .modal-content {
+    width: 700px;
+  }
+}
+
+.patient-popup-modal {
+  top: calc(50vh - 370px);
+  overflow: hidden!important;
+  .modal-dialog {
+    max-width: 900px;
+  }
+  .modal-content {
+    width: 900px;
+  }
+  .modal-body{
+    overflow: hidden;
+  }
+}
+.material-modal {
+  top: 5%;
+  .modal-dialog {
+    max-width: 700px;
+  }
+  .modal-content {
+    width: 700px;
+  }
+}
+.add-patient-schedule-modal {
+  height: 100vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex !important;
+  -webkit-box-align: center;
+  align-items: center;
+  top: 0;
+  .modal-dialog {
+    max-width: 1200px;
+    max-height: 700px;
+  }
+  .modal-content {
+    width: 1200px;
+    height: 700px;
+  }
+}
+.select-disease-name-modal {
+  z-index: 1043;
+  top: 10%;
+  .modal-dialog {
+    max-width: 60vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 70vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.set-detail-view-modal {
+  top: 0%;
+  .modal-dialog {
+    max-width: 70vw;
+  }
+  .modal-content {
+    width: 70vw;
+    .modal-body {
+      height: 100%;
+    }
+  }
+}
+.reserve-calendar-modal {
+  .modal-dialog {
+    top: 3%;
+    max-width: 60vw;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 90vh;
+    .modal-body {
+      overflow-y: auto;
+      height: 100%;
+    }
+  }
+}
+.treat-set-master-modal {
+  top: 5%;
+  .modal-dialog {
+    max-width: 85vw;
+  }
+  .modal-content {
+    width: 85vw;
+  }
+  .modal-body {
+    overflow-y: auto;
+  }
+}
+.add-disease-name-modal {
+  top: 15%;
+  .modal-dialog {
+    max-width: 310px;
+  }
+  .modal-content {
+    width: 310px;
+  }
+}
+
+.add-infection-modal {
+  top: 15%;
+  .modal-dialog {
+    max-width: 1000px;
+  }
+  .modal-content {
+    width: 1000px;
+  }
+}
+.attention-input-modal {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    width: 557px;
+  }
+}
+.input-panel-modal {
+  top: 0%;
+  z-index: 1040;
+  .modal-dialog {
+    max-width: 1200px;    
+  }
+  .modal-content {
+    width: 1200px;
+    max-height:94vh;;
+    height:94vh;
+  }
+  .modal-body {
+    height: 100%;
+    width:100%;
+  }
+}
+.small-input-panel-modal {
+  top: 0px !important;
+  z-index: 1040;
+  .modal-dialog {
+    max-width: 1200px;
+    margin: 1rem auto !important;
+  }
+  .modal-content {
+    width: 1200px;
+    max-height: 96vh;
+    height: 96vh;
+  }
+  .modal-body {
+    height: 100%;
+    width:100%;
+    overflow-y: auto;
+  }
+}
+
+.input-instruction-modal {
+  top: 0;
+  z-index: 1040;
+  .modal-dialog {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+  }
+  .modal-body {
+    height: 100%;
+  }
+  .modal-footer{
+    border:none;
+  }
+}
+.fee-management-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 75vw;
+  }
+  .modal-content {
+    width: 75vw;
+    .modal-body{
+      height: 30rem;
+    }
+  }
+}
+.input-comment-modal {
+  top: 15%;
+  .modal-dialog {
+    max-width: 350px;
+  }
+  .modal-content {
+    width: 350px;
+  }
+}
+.range-setting-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    width: 600px;
+  }
+}
+.make-prescript-history-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 1080px;
+    max-height: 50vh;
+  }
+  .modal-content {
+    width: 1000px;
+    height: 50vh;
+  }
+  .modal-body {
+    overflow: auto;
+  }
+}
+.preset-prescription-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 1020px;
+  }
+  .modal-content {
+    width: 1020px;
+    height: 630px;
+  }
+}
+.edit-prescript-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 1300px;
+  }
+  .modal-content {
+    width: 1300px;
+    height: 90%;
+  }
+}
+.edit-injection-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 85vw;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .modal-content {
+    width: 85vw;
+  }
+}
+.terminal-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 1050px;
+  }
+  .modal-content {
+    width: 1050px;
+  }
+}
+
+.exam-calc-modal {
+  top: 1%;
+  .modal-dialog {
+    max-width: 1300px;
+  }
+  .modal-content {
+    width: 1300px;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.exam-va-calc-modal {
+  top: 1%;
+  .modal-dialog {
+    max-width: 1300px;
+  }
+  .modal-content {
+    width: 1300px;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.exam-schema-calc-modal {
+  top: 1vh;
+  .modal-dialog {
+    max-width: 1300px;
+  }
+  .modal-content {
+    margin: 0 auto;
+    width: 805px;
+    height: 710px;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.schema-calc-modal {
+  .modal-dialog {
+    max-width: 1300px;
+  }
+  .modal-content {
+    margin: 0 auto;
+    width: 805px;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.med-select-modal {
+  top: 1%;
+  .modal-dialog {
+    max-width: 1000px;
+  }
+  .modal-content {
+    width: 1000px;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.prescript-medicine-select-modal {
+  top: calc( 50vh - 325px);
+  .modal-dialog {
+    max-width: 85vw;
+  }
+  .modal-content {
+    width: 85vw;
+    // height: 76vh;
+    height:650px;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.select-patient-soap-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 85vw;
+  }
+  .modal-content {
+    width: 85vw;
+    height: 75vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.dial_history-modal {
+  .modal-dialog {
+    max-width: 70vw;
+  }
+  .modal-content {
+    width: 70vw;
+  }
+}
+.prescription-multiSet-modal {
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex !important;
+    -webkit-box-align: center;
+    align-items: center;
+    top: 0;
+  .modal-dialog {
+    max-width: 1200px;
+  }
+  .modal-content {
+    width: 1200px;
+  }
+  .modal-body{
+    padding:0px!important;
+  }
+}
+.edit-bed-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 680px;
+  }
+  .modal-content {
+    width: 680px;
+  }
+}
+.edit-graph-modal {
+  top: 10%;
+  .modal-dialog {
+    width: 1300px;
+    height: 650px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-content {
+    width: 1300px;
+    height: 650px;
+    max-width: 1300px;
+  }
+}
+
+.edit-group-schedule-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 850px;
+  }
+  .modal-content {
+    width: 850px;
+  }
+}
+
+.authority-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 80vw;
+  }
+}
+.menu-setting-modal{
+  top: 0;
+  .modal-dialog {
+    max-width: 80vw;
+  }
+  .modal-content {
+    width: 80vw;
+    height:94vh;
+  }
+  .modal-body{
+    height:100%;
+    overflow-y: auto;
+  }
+}
+.medical-history-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 80vw;
+  }
+  .modal-content {
+    width: 80vw;
+  }
+}
+
+.patient-contrain-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 80vw;
+    height: 80vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 80vh;
+    .modal-body {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+.patient-info-edit-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 80vw;
+    height: 90vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 90vh;
+    .modal-body {
+      height: 100%;
+    }
+  }
+}
+
+.weight-modal {
+  .modal-title {
+    font-size: 28px;
+  }
+  .modal-header {
+    height: 76px;
+  }
+
+  .modal-footer {
+    button {
+      padding: 5px 15px;
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .spinner-border {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .send-label {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+.bed-modal {
+  .modal-dialog {
+    margin-left: 164px;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  left: 0px;
+  .modal-content {
+    width: 300px;
+  }
+}
+.printer-modal {
+  top:3.5vh!important;
+  .modal-dialog {
+    max-width: 75vw;
+    // max-width: 800px;
+    margin-top: 0;
+  }
+  .modal-content {
+    width: 75vw;
+    // width: 800px;
+  }
+  .modal-body {
+    height: 80vh;
+    button {
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
+.medical-info-doc-preview-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 80vw;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+    overflow-y:auto;
+  }
+}
+.blood-record-modal{
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.print-sheet-modal{
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.statusmonitor-preview-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 95vw;
+  }
+  .modal-content {
+    width: 95vw;
+    height: 94vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.family-printview-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 70vw;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 93vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.flash-confirm {
+  margin-top: 80px;
+  left: 34vw;
+  .modal-content {
+    width: 320px;
+    border-radius: 0;
+    .modal-body {
+      padding: 25px;
+    }
+  }
+}
+.log-modal {
+  top: 80px;
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-content {
+    width: 90vw;
+  }
+}
+
+.dializer_edit_modal {
+  .modal-dialog {
+    max-width: 800px;
+    max-height: 46rem;
+  }
+  .modal-content {
+    width: 800px;
+    height: 46rem;
+  }
+}
+.edit-date-move-modal{
+  .modal-dialog {
+    max-height: 75vh;
+  }
+  .modal-content {
+    height: 75vh;
+  }
+}
+.edit-anti-modal{
+  .modal-dialog {
+    max-height: 46.5rem;
+  }
+  .modal-content {
+    height: 46.5rem;
+  }
+}
+
+.aggregate-day-preview-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.confirm-complete-modal {
+  top: 25%;
+  .modal-content {
+    width: 600px;
+    height: 30vh;
+  }
+}
+
+.pattern-delete-modal {
+  top: 25%;
+  .modal-dialog {
+    max-width: 650px;
+  }
+  .modal-content {
+    width: 650px;
+  }
+}
+.outpatient-modal {
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-content {
+    width: 90vw;
+  }
+  .modal-body {
+    height: 80%;
+  }
+}
+
+.change-meal {
+  .modal-body {
+    overflow-y: auto;
+  }
+}
+
+.out-return-meal {
+  .modal-content {
+    width: 50vw;
+    height: 75vh;
+  }
+}
+
+.set-user-info {
+  .modal-dialog {
+    max-width: 70vw;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 80vh;
+    max-height: 80vh !important;
+  }
+  .modal-body {
+    height: 60vh;
+  }
+}
+
+.stop-prescription {
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.stop-date-prescription {
+  .modal-content {
+    max-height: 70vh !important;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.notice-modal {
+  top: calc(50% - 27rem);
+  .modal-dialog {
+    max-width: 70rem;
+  }
+  .modal-content {
+    width: 70rem;
+  }
+  .modal-body {
+    height: 40rem;
+  }
+}
+.update-reason-modal{
+  top:calc(50% - 14rem)!important;
+}
+
+.disease-name-modal {
+  z-index: 1046;
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-content {
+    width: 90vw;
+  }
+  .modal-body {
+    height: 80%;
+  }
+  .modal-title {
+    width: 200px;
+    float: left;
+  }
+}
+.guidance-modal {
+  .modal-dialog {
+    max-width: 70vw;
+  }
+  .modal-content {
+    width: 70vw;
+  }
+  .modal-body {
+    height: 80%;
+  }
+}
+.medicine-guidance-modal {
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 90vh;
+  }
+  .modal-body {
+    height: 80%;
+  }
+}
+.guidance-fee-modal {
+  .modal-footer {
+    justify-content: normal !important;
+  }
+}
+
+.print-sending-modal {
+  top: 5%;
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.react-datepicker {
+  width: 150%;
+  font-size: 1.25rem;
+  height:26rem;
+  //overflow: hidden;
+  .react-datepicker__month-container {
+    width: 100%;
+    height: 24.375rem;
+  }
+  .react-datepicker__time-container,
+  .react-datepicker__time-box {
+    width: 100% !important;
+    height: 100%;
+  }
+  .react-datepicker__time{
+    height: 100%;
+  }
+  .react-datepicker__header--time {
+	  padding: 0.5rem 0.2rem!important;
+  }
+	.react-datepicker__time {
+		height: calc(100% - 2.5rem);
+		.react-datepicker__time-list{
+			height: 100% !important;
+		}
+	}
+  .react-datepicker__current-month {
+    font-size: 1.25rem;
+  }
+  .react-datepicker__day-names,
+  .react-datepicker__week {
+    display: flex;
+    justify-content: space-between;
+  }
+  .react-datepicker__month {
+    .react-datepicker__week {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.prescription-done-modal {
+  .modal-dialog {
+    max-width: 80vw;
+  }
+  .modal-content {
+    width: 80vw;
+  }
+}
+
+.prescript-done-modal{
+  .modal-content{
+    width: 35vw;
+    height: 75vh;
+  }
+  .modal-body{
+    overflow: hidden;
+  }
+  .modal-dialog{
+    top: 10%;
+    max-width: 35vw !important;
+  }
+}
+
+.prescript-increase-period-modal{
+  .modal-content{
+    width: 35vw;
+    height: 76vh;
+  }  
+  .modal-dialog{
+    top: 10%;
+    max-width: 35vw !important;
+  }
+}
+
+.endExamination_dlg {
+  .modal-dialog {
+    .modal-content {
+      max-height: 710px;
+      overflow-y: auto;
+      .modal-body {
+        overflow: hidden;
+      }
+    }
+  }
+}
+.openPatientKarte_dlg {
+  .modal-dialog {
+    .modal-content {
+      max-height: 710px;
+      overflow-y: auto;
+      .modal-header {
+        display: block;
+        border-bottom: none;
+        .modal-title {
+          width: 100%;
+        }
+        .div-karte-array {
+          width: 100%;
+          padding: 20px;
+          padding-bottom: 0px;
+        }
+        .patient-name {
+          padding: 4px;
+          float: left;
+        }
+        table {
+          margin-bottom: 0px;
+          margin-top: 20px;
+          tbody {
+            td {
+              padding: 4px;
+            }
+          }
+          button {
+            float: right;
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+        table tr:nth-child(even) {
+          background-color: rgb(242, 242, 242);
+        }
+        th {
+          background: rgb(105, 200, 225);
+          color: white;
+          text-align: center;
+        }
+      }
+      .modal-body {
+        .focus {
+          border: 1px solid black !important;
+        }
+      }
+    }
+  }
+}
+.modal-history-inspection {
+  top: 10%;
+  .modal-dialog {
+    max-width: 60vw !important;
+    max-height: 60vh !important;
+    .modal-content {
+      width: 60vw;
+      height: 60vh;
+      .modal-body {
+        height: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.modal-history-drkarte{
+  top:calc(50vh - 31rem)!important;
+  overflow:hidden!important;
+  .modal-dialog {
+    max-width: 82rem !important;
+    .modal-content {
+      width:100%!important;
+      .modal-body {
+        height: 49rem;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.tab-content-modal {
+  .modal-dialog {
+    max-width: 800px !important;
+    .modal-content {
+      width: 800px;
+    }
+  }
+}
+.usage-add-modal {
+  .modal-dialog {
+    max-width: 760px !important;
+    .modal-content {
+      width: 760px;
+    }
+  }
+}
+.karte_print_modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 900px;
+    .modal-content {
+      width: 900px;
+      min-height: 300px;
+    }
+  }
+}
+
+.period-modal {
+  .modal-content {
+    height: 200px;
+    .modal-body {
+      button {
+        span {
+          font-size: 20px;
+        }
+      }
+      .react-datepicker-wrapper {
+        input {
+          width: 175px;
+        }
+      }
+    }
+  }
+}
+
+.first-view-modal {
+  z-index: 1040;
+}
+
+.nurse-course-modal{
+  top: 4rem;
+  .modal-dialog{
+    max-width: 45rem !important;
+  }
+}
+
+.haruka-done-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 35vw;
+  }
+  .modal-content {
+    width: 35vw;
+    height: 75vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.treat-done-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 70vw;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 75vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.haruka-done-radiation-modal{
+  top:7%;
+  .modal-dialog {
+    max-width: 60vw;
+  }
+  .modal-content {
+    width: 60vw;
+    height:82vh;
+  }
+}
+
+.tag-add-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    width: 600px;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.basic-data-modal {
+  top: 15%;
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    height: 450px;
+  }
+  .modal-footer {
+    button span {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}
+.basic-data-input-modal {
+  .modal-content {
+    height: 31rem;
+  }
+}
+.basicdata-modal {
+  .modal-dialog {
+    max-width: 600px;
+  }
+}
+
+.height-weight-vital {
+	top:5%;
+  .modal-dialog {
+	  max-width: 760px;
+	  max-height: 85vh;
+  }
+	.modal-content {
+		width: 760px;
+		height: 85vh;
+		max-height: 85vh !important;
+	}
+}
+
+// #resetCanvas{
+//   left:20%!important;
+// }
+
+.patient-detail-modal {
+  top: 8%;
+  .modal-dialog {
+    max-width: 80vw;
+  }
+  .modal-header {
+    padding-bottom: 0;
+  }
+  .modal-content {
+    width: 80vw;
+    border: 0px;
+    .modal-header {
+      border-bottom: none;
+    }
+    .modal-body .modal-body {
+      padding: 0px;
+    }
+    .modal-body {
+      .nav-tabs {
+        border-bottom: none;
+      }
+      .category-tabs .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 1.875rem;
+      }
+      .category-tabs .nav-link.active {
+        background: none;
+        border: none;
+      }
+      .category-tabs li:nth-child(1) {
+        background: #e0e0e0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .nav-link.active {
+          border-color: #e0e0e0;
+        }
+      }
+      .category-tabs li:nth-child(2) {
+        background: #c8c8c8;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .nav-link.active {
+          border-color: #c8c8c8;
+        }
+      }
+      .category-tabs li:nth-child(3) {
+        background: #b0b0b0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .nav-link.active {
+          border-color: #b0b0b0;
+        }
+      }
+      .category-tabs li:nth-child(4) {
+        background: #a5a3a3;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .nav-link.active {
+          border-color: #a5a3a3;
+        }
+      }
+      .category-tabs li:nth-child(5) {
+        background: #999999;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .nav-link.active {
+          border-color: #999999;
+        }
+      }
+      .child-tabs .nav-link {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 1.2rem;
+        padding: 5px 2rem;
+      }
+      .first-tab {
+        background-image: linear-gradient(#e0e0e0, white);
+        border-radius: 10px;
+        box-shadow: rgb(141, 141, 141) -2px 1px 20px;
+      }
+      .second-tab {
+        background-image: linear-gradient(#c8c8c8, white);
+        border-radius: 10px;
+        box-shadow: rgb(141, 141, 141) -2px 1px 20px;
+      }
+      .third-tab {
+        background-image: linear-gradient(#b0b0b0, white);
+        border-radius: 10px;
+        box-shadow: rgb(141, 141, 141) -2px 1px 20px;
+      }
+      .forth-tab {
+        background-image: linear-gradient(#999999, white);
+        border-radius: 10px;
+        box-shadow: rgb(141, 141, 141) -2px 1px 20px;
+      }
+      .fifth_tab {
+        background-image: linear-gradient(#808080, white);
+        border-radius: 10px;
+        box-shadow: rgb(141, 141, 141) -2px 1px 20px;
+      }
+      .fDEiRM ul {
+        background: white;
+        li div {
+          padding-left: 10px;
+          line-height: 1.5;
+        }
+      }
+      .first-tab .fDEiRM ul {
+        background: none;
+      }
+    }
+  }
+  .modal-title {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+
+.routine-input-panel-modal {
+  z-index: 1040;
+  .modal-dialog {
+    max-width: 90vw;
+    height: 90vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+  }
+  .modal-body {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.treatment_group_modal {
+  top: 5%;
+  .modal-dialog {
+    max-width: 94vw;
+    height: 90vh;
+  }
+  .modal-content {
+    width: 94vw;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow-y: auto;
+  }
+}
+
+.administrate_group_modal {
+  top: 5%;
+  .modal-dialog {
+    max-width: 94vw;
+    height: 85vh;
+  }
+  .modal-content {
+    width: 78vw;
+    height: 85vh;
+  }
+  .modal-body {
+    overflow-y: auto;
+  }
+}
+
+.injection_period_completed_manage_modal {
+  top: 5%;
+  .modal-dialog {
+    max-width: 94vw;
+    height: 85vh;
+  }
+  .modal-content {
+    width: 78vw;
+    height: 85vh;
+  }
+  .modal-body {
+    overflow-y: auto;
+  }
+}
+
+.administrate_injection_stop_modal {
+  top: 5%;
+  .modal-dialog {
+    max-width: 60vw;
+    height: 85vh;
+  }
+  .modal-content {
+    width: 55vw;
+    height: 85vh;
+  }
+  .modal-body {
+    overflow-y: auto;
+  }
+}
+
+.importance-order-list-modal {
+  top: 10%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 65vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 65vw;
+    height: 80vh;
+  }
+}
+
+.visit-patient-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 70vh;
+  }
+}
+.haruka-staff-modal {
+  top: 16%;
+}
+.patient-staff-list-modal {
+  top: 18%;
+  .modal-dialog {
+    height: 62vh;
+  }
+  .modal-content {
+    height: 62vh;
+  }
+  .modal-body{
+    overflow: hidden;
+  }
+  .modal-footer {
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+.disease-name-patient-modal {
+  .modal-body {
+    overflow: hidden;
+    padding: 2px 10px 2px 10px !important;
+  }
+  .list-content {
+    margin-top: 0px !important;
+    td {
+      font-size: 14px !important;
+      padding: 2px 4px !important;
+      p {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+  .radio-area {
+    margin-bottom: 0px !important;
+  }
+  .insert-checkbox-design {
+    margin-bottom: 5px !important;
+  }
+}
+
+.set-modal {
+  top: 10%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 70vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 70vh;
+  }
+}
+
+.select-visit-diagnosis-type-modal {
+  top: 30%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 550px;
+    max-height: 185px;
+  }
+  .modal-content {
+    width: 550px;
+    height: 185px;
+  }
+}
+
+.mode-select-modal {
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 55vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 55vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.exam-order-list-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 50vw;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      width: 50vw;
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 90vh;
+      }
+    }
+  }
+}
+
+.body-part-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 600px;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      width: 600px;
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 90vh;
+      }
+    }
+  }
+}
+.body-part-one-line-modal{
+  .modal-content {
+      width: 600px;
+      .modal-body {
+        overflow: hidden !important;      
+        max-height: 90vh;
+      }
+    }
+}
+.search-condition-modal {
+  top: 2%;
+  .modal-header {
+    border-bottom: none;
+  }
+}
+.name-save-modal {
+  top: 33%;
+}
+
+.inspection-status-list-modal {
+  .modal-dialog {
+    max-width: 65vw;
+  }
+  .modal-content {
+    width: 65vw;
+  }
+}
+.auto-width-modal {
+  .modal-content {
+    width: auto;
+  }
+  .modal-dialog {
+    max-width: fit-content;
+  }
+}
+
+.blood-modal {
+  .modal-content {
+    width: 50rem;
+  }
+  .modal-dialog {
+    max-width: 50rem;
+  }
+}
+
+.inspection-department-result-modal {
+  top: 10%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 850px;
+    max-height: 620px;
+  }
+  .modal-content {
+    width: 850px;
+    height: 620px;
+  }
+}
+
+.prescript-pattern-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90%;
+  }
+}
+
+.department-result-preview-modal {
+  top: 10%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 60vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 70vh;
+  }
+}
+
+.group-move-modal {
+  .modal-dialog {
+    top: 30%;
+    max-width: 70vw;
+    max-height: 25vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 25vh;
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+
+.knowledge-set-modal {
+  top: 10%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 850px;
+    max-height: 65vh;
+  }
+  .modal-content {
+    width: 850px;
+    height: 65vh;
+  }
+  .title-right-area {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    button {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.out-exam-cooperation-request-output-modal {
+  top: 10%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 550px;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 550px;
+    height: 80vh;
+  }
+}
+
+.report-creat-list-modal {
+  top: 5%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 80vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 90vh;
+  }
+}
+
+.emergency_reception-modal {
+  top: 1%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 600px;
+    max-height: 98vh;
+  }
+  .modal-content {
+    width: 600px;
+    height: 98vh;
+  }
+}
+
+.input-name-modal {
+  top: 30%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 500px;
+    max-height: 230px;
+  }
+  .modal-content {
+    width: 500px;
+    height: 230px;
+    position: relative;
+  }
+}
+
+.edit-body-text-modal {
+  top: 30%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 500px;
+    max-height: 300px;
+  }
+  .modal-content {
+    width: 500px;
+    height: 300px;
+  }
+}
+.preview-modal {
+  top: 25%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 500px;
+    max-height: 300px;
+  }
+  .modal-content {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+.move-meal-calendar {
+  .modal-dialog {
+    max-width: 90vw;
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+
+.bed-control-modal {
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-content {
+    width: 90vw;
+  }
+  .modal-body {
+    height: 80%;
+  }
+}
+
+.period-order-list-modal {
+  .modal-dialog {
+    max-width: 65vw;
+  }
+  .modal-content {
+    width: 65vw;
+  }
+  .modal-body {
+    height: 80%;
+  }
+}
+
+.nurse-profile-modal{
+  .modal-header{
+    min-height: 2.5rem!important;
+    height: 2.8rem!important;
+  }
+  .modal-body{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+  }
+  .modal-footer{
+    padding-top:0.3rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-bottom:0.3rem;
+    button{
+      padding:0.3rem;
+      span{
+        font-size:1rem;
+      }
+    }
+  }
+}
+
+.hospital-plan-list-modal {
+  .modal-dialog {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+  }
+  .modal-body {
+    height: 100%;
+  }
+}
+.guidance-patient-list {
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+.pharmacist-choice-modal {
+  top: 10%;
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 500px;
+    max-height: 75vh;
+  }
+  .modal-content {
+    width: 500px;
+    height: 75vh;
+  }
+}
+
+.simple-order {
+  .modal-dialog {
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+
+.move-hospitalization-modal {
+  .modal-dialog {
+    top: 3%;
+    .modal-body {
+      overflow: hidden;
+    }
+    max-width: 60vw;
+    max-height: 94vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 94vh;
+  }
+}
+
+.out-hospitalization-modal {
+  top: 25%;
+  .modal-dialog {
+    max-width: 650px;
+    max-height: 460px;
+  }
+  .modal-content {
+    width: 650px;
+    height: 460px;
+  }
+}
+
+.digital-image-modal {
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 80vh;
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+
+.edit-regular-text-modal {
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 60vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 60vh;
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+
+.calc-dial-modal {
+  top: 25%;
+  .modal-dialog {
+    max-width: 430px;
+  }
+  .modal-content {
+    width: 430px;
+    .modal-body {
+      max-height: 500px;
+      overflow: hidden;
+    }
+  }
+}
+
+.width-70vw-modal {
+  .modal-dialog {
+    max-width: 70vw;
+  }
+  .modal-content {
+    width: 70vw;
+  }
+}
+.width-60vw-modal {
+  .modal-dialog {
+    max-width: 60vw;
+  }
+  .modal-content {
+    width: 60vw;
+  }
+}
+.width-50vw-modal {
+  .modal-dialog {
+    max-width: 50vw;
+  }
+  .modal-content {
+    width: 50vw;
+  }
+}
+
+.view-range-set-modal {
+  top: 20%;
+  .modal-dialog {
+    max-width: 550px;
+    max-height: 450px;
+  }
+  .modal-content {
+    width: 550px;
+    height: 450px;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.auto-logout-modal {
+  z-index: 1060;
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .modal-content {
+    height: 300px;
+    .modal-title {
+      font-size: 2rem;
+    }
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.register-schedule-modal {
+  top: 15%;
+  .modal-dialog {
+    max-width: 60vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 70vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.injection-set-modal {
+  .modal-dialog {
+    max-width: 800px;
+  }
+  .modal-content {
+    width: 800px;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.remove-x-input {
+  input[type="text"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  input[type="text"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  input {
+    // background: none !important;
+    background: none;
+    color: black;
+  }
+}
+.top-5-modal {
+  top: 5%;
+}
+.footer-buttons {
+  display: flex;
+  justify-content: flex-end;
+  clear: both;
+  button {
+    border-radius: 0.25rem;
+    min-width: 9rem;
+    margin-left: 0.6rem;
+    span {
+      font-size: 1.25rem;
+      font-weight: normal;
+    }
+  }
+	.react-datepicker__navigation--previous, .react-datepicker__navigation--next {
+		min-width: 0;
+		margin-left: 0;
+	}
+
+  .left-btn {
+    position: absolute;
+    left: 1.25rem;
+  }
+  .right-btn {
+    display: flex;
+    position: absolute;
+    right: 1.25rem;
+    button {
+      margin-left: 0.3rem;
+    }
+  }
+  .delete-btn {
+    border: solid 2px #4285f4;
+    background: #ffffff;
+    span {
+      color: #4285f4;
+    }
+  }
+  .delete-btn:hover {
+    background: #4285f4;
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .add-btn {
+    background: #cc0000;
+    span {
+      color: #ffffff;
+    }
+  }
+  .add-btn:hover {
+    background: #e81123;
+    span {
+      color: #ffffff;
+    }
+  }
+  .change-btn {
+    background: #cc0000;
+    span {
+      color: #ffffff;
+    }
+  }
+  .change-btn:hover {
+    background: #e81123;
+    span {
+      color: #ffffff;
+    }
+  }
+  .custom-modal-btn{
+    border-radius: 0.4rem;
+    background: #69c8e1;
+    border: none;
+    min-width: 9rem;
+    padding: 8px 16px;
+    text-align: center;
+    span {
+      color: white;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    .red-btn {
+      border: 2px solid #cc0000;
+    }
+    .red-btn:hover {
+      border: 2px solid #e81123;
+      cursor: pointer;
+    }
+    .cancel-btn:hover {
+      cursor: pointer;
+    }
+  }
+  .red-btn {
+    background: #cc0000;
+    border: 2px solid #cc0000;
+    span {
+      color: #ffffff;
+    }
+  }
+  .red-btn:hover {
+    background: #e81123;
+    span {
+      color: #ffffff;
+    }
+  }  
+  .cancel-btn {
+    border: solid 2px #000000;
+    background: #ffffff;
+    span {
+      color: #000000;
+    }
+  }
+  .cancel-btn:hover {
+    background: #ffffff;
+    border: solid 2px #7e7e7e;
+    span {
+      color: #7e7e7e;
+    }
+  }
+}
+.fixed-btn {
+  position: absolute;
+  width: 100%;
+  bottom: 10rem;
+  right: 0;
+}
+.dial-patient-list-modal{
+  top:5vh;
+
+  .modal-dialog {
+    max-width:70rem;
+    width:70rem;
+  }
+  .modal-content {
+    max-width:70rem;
+    width:70rem;
+  }
+  .modal-header{
+    button{
+      span{
+        font-size:1.1rem;
+        height:1.3rem;
+        color:black;
+      }
+    }
+  }
+  .modal-body {
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+}
+.register-alert-modal {
+  top: 10%;
+  button {
+    span{
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 60vh;
+  }
+  .modal-content {
+    width: 50vw;
+  }
+  .modal-body {
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+  .modal-footer{
+    justify-content: flex-end!important;
+  }
+}
+.confirm-read-modal {
+  top: 25%;
+  .modal-content {
+    background: rgba(255,255,255,0.9);
+    box-shadow: rgb(136, 136, 136) 4px 4px 4px 1px;
+    width: 600px;
+    height: 25vh;
+  }
+}
+.confirm-read-full-opacity-modal {
+  top: 25%;
+  .modal-content {
+    background: rgb(255,255,255);
+    box-shadow: rgb(136, 136, 136) 4px 4px 4px 1px;
+    width: 600px;
+    height: 25vh;
+  }
+}
+.validate-alert-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 50vw;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      width: 50vw;
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 60vh;
+      }
+      .modal-footer{
+        justify-content: flex-end!important;
+      }
+    }
+  }
+  button {
+    span{
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+}
+
+.set-sort-patient-list-modal {
+  top: 20%;
+  .modal-dialog {
+    max-width: 450px;
+    max-height: 220px;
+  }
+  .modal-content {
+    width: 450px;
+    height: 220px;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.modal-footer {
+  button {
+      border-radius: 0.4rem;
+      background: #69c8e1;
+      border: none;
+      min-width: 9rem;
+      span {
+        color: white;
+        font-size: 1rem;
+        font-weight: normal;
+      }
+    }
+  .custom-modal-btn{
+    border-radius: 0.4rem;
+    background: #69c8e1;
+    border: none;
+    min-width: 9rem;
+    padding: 8px 16px;
+    text-align: center;
+    span {
+      color: white;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+    .red-btn {
+      border: 2px solid #cc0000;
+    }
+    .red-btn:hover {
+      border: 2px solid #e81123;
+      cursor: pointer;
+    }
+    .cancel-btn:hover {
+      cursor: pointer;
+    }
+  }
+  .red-btn {
+    border: 2px solid #cc0000;
+    background: #cc0000 !important;
+    span {
+      color: #ffffff !important;
+    }
+  }
+  .red-btn:hover {
+    background: #e81123 !important;
+    span {
+      color: #ffffff !important;
+    }
+  }
+  .blue-btn {
+    background: #69c8e1;
+    span {
+      color: #ffffff;
+    }
+  }
+  .blue-btn:hover {
+    background: #269fbf;
+    span {
+      color: #ffffff;
+    }
+  }  
+  .cancel-btn {
+    border: solid 2px #000000 !important;
+    background: #ffffff !important;
+    span {
+      color: #000000 !important;
+    }
+  }
+  .cancel-btn:hover {
+    background: #ffffff !important;
+    border: solid 2px #7e7e7e !important;
+    span {
+      color: #7e7e7e !important;
+    }
+  }
+  .delete-btn {
+    background: #ffffff;
+    border: solid 2px #4285f4;
+    span {
+      color: #4285f4;
+    }
+  }
+  .delete-btn:hover {
+    background: #4285f4;
+    span {
+      color: #ffffff;
+    }
+  }
+  .react-datepicker{
+    button{
+      min-width : 0;
+      background : none;
+      padding: 0px;
+      margin-right: 0px;
+    }
+    .react-datepicker__navigation--previous{
+      border: 0.45rem solid transparent;
+      border-right-color: #ccc;
+      border-radius: 0px;
+    }
+    .react-datepicker__navigation--next{
+      border: 0.45rem solid transparent;
+      border-left-color: #ccc;
+      border-radius: 0px;
+    }
+  }
+}
+.haruka-buttons {
+  display: flex;
+  justify-content: flex-end;
+  clear: both;
+  button {
+      border-radius: 0.4rem;
+      background: #69c8e1;
+      border: none;
+      min-width: 9rem;
+      span {
+        color: white;
+        font-size: 1rem;
+        font-weight: normal;
+      }
+    }
+  
+  .blue-btn {
+    background: #69c8e1;
+    span {
+      color: #ffffff;
+    }
+  }
+  .blue-btn:hover {
+    background: #269fbf;
+    span {
+      color: #ffffff;
+    }
+  }  
+  .cancel-btn {
+    border: solid 2px #000000;
+    background: #ffffff;
+    span {
+      color: #000000;
+    }
+  }
+  .cancel-btn:hover {
+    background: #ffffff;
+    border: solid 2px #7e7e7e;
+    span {
+      color: #7e7e7e;
+    }
+  }
+  .delete-btn {
+    background: #ffffff;
+    border: solid 2px #4285f4;
+    span {
+      color: #4285f4;
+    }
+  }
+  .delete-btn:hover {
+    background: #4285f4;
+    span {
+      color: #ffffff;
+    }
+  }
+  .red-btn {
+    border: 2px solid #cc0000;
+    background: #cc0000 !important;
+    span {
+      color: #ffffff !important;
+    }
+  }
+  .red-btn:hover {
+    background: #e81123 !important;
+    span {
+      color: #ffffff !important;
+    }
+  }
+  .react-datepicker{
+    button{
+      min-width : unset;
+      background : none;
+    }
+  }
+}
+.home-treatment-modal {
+  .modal-body, .modal-footer {
+    padding: 0.5rem 1rem;
+  }
+}
+.input-keyword-modal{
+  top: 0;
+  .modal-dialog {
+    max-width: 840px;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      width: 840px;
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 90vh;
+      }
+    }
+  }
+}
+
+.nutrition-guidance-slip-total {
+  top: 10%;
+  .modal-dialog {
+    max-width: 60vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.chemical-information-search {
+  top: 10%;
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.edit-chemical-modal {
+  top: 15%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 55vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 55vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.document-save-confirm-modal {
+  top: 20%;
+  .modal-dialog {
+    max-width: 40vw;
+    max-height: 60vh;
+    .modal-content {
+      width: 40vw;
+      height: 60vh;
+      .modal-body {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.hospital-plan-doc {
+  top: 10%;
+  .modal-dialog {
+    max-width: 65vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 65vw;
+    height: 70vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.scanner-batch-take-doc {
+  .modal-dialog {
+    top: 2%;
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+  }
+  .modal-body {
+    height: 100%;
+  }
+  .modal-footer{
+    .select-value {
+      .pullbox-title {
+        width:0;
+      }
+      .pullbox-label {
+        margin:0;
+        select {
+          width:10rem;
+        }
+      }
+    }
+  }
+}
+
+.individual-read {
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.calc-haruka-modal {
+  top: 0;
+  .modal-dialog {
+    max-width: 600px;
+    outline: none !important;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .modal-content {
+    width: 600px;
+    .modal-body {
+      overflow: hidden;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.select-multi-patient-modal {
+  .modal-dialog {
+    top: 10%;
+    max-width: 94vw;
+  }
+  .modal-content {
+    width: 94vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.tag-list-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.hospital-contact-patient-list {
+  top: 5%;
+  .modal-dialog {
+    max-width: 90vw;
+    height: 90vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+    .modal-body {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+.inspection-with-past-result-modal {
+  .modal-dialog {
+    max-width: 60vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.soap-focus-modal {
+  top: 5%;
+  .modal-dialog {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+  }
+}
+
+.change-responsibility-modal {
+  .modal-dialog {
+    top: 10%;
+    max-width: 650px;
+    max-height: 580px;
+  }
+  .modal-content {
+    width: 650px;
+    height: 580px;
+  }
+}
+
+.document-edit-modal {
+  top: 20%;
+  .modal-dialog {
+    max-width: 40vw;
+    max-height: 35vh;
+  }
+  .modal-content {
+    width: 40vw;
+    height: 35vh;
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+}
+
+.nurse-problem-focus-select {
+  top: 15%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 60vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 60vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.focus-nurse-plan {
+  top: 8%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.adminitration-modal{
+  top:calc(50vh - 20rem);
+  .modal-dialog {
+    max-width:1000px;
+  }
+}
+
+.nurse-assignment {
+  top: 25%;
+  .modal-dialog {
+    max-width: 30vw;
+    max-height: 35vh;
+  }
+  .modal-content {
+    width: 30vw;
+    height: 35vh;
+  }
+}
+
+.patients-schedule {
+  top: 8%;
+  .modal-dialog {
+    max-width: 90vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.state-batch-regist {
+  top: 8%;
+  .modal-dialog {
+    max-width: 75vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 75vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.assignment-list {
+  top: 8%;
+  .modal-dialog {
+    max-width: 98vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 98vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.move-plan-patient-list {
+  .modal-dialog {
+    top: 8%;
+    max-width: 70vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.instruction-confirm-list {
+  top: 8%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.select-patient-modal {
+  top: 10%;
+  .modal-dialog {
+    max-width: 85vw;
+  }
+  .modal-content {
+    width: 85vw;
+    height: 70vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.slip-detail {
+  top: 0%;
+  overflow-y:hidden!important;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 95vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 95vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.patient-daily-memo {
+  top: 20%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 40vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 40vh;
+  }
+}
+
+.barcode-mount-print {
+  top: 15%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 50vh;
+  }
+  .modal-content {
+    width: 50vw;
+  }
+}
+
+.patient-help-modal{
+  top:10%;
+  .modal-dialog {
+    max-width: 55rem;
+  }
+}
+
+.incharge-search-condition{
+  top:7%;
+  .modal-dialog {
+    max-width: 55rem;
+  }
+  .modal-body{
+    height: 67vh;
+  }
+}
+
+.treat-injection-list {
+  top: 8%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 80vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.discharge-transfer-nursing-summary {
+  .modal-dialog {
+    max-width: 95vw;
+    max-height: 94vh;
+  }
+  .modal-content {
+    width: 95vw;
+    height: 94vh;
+  }
+  .modal-body {
+    height: 100%;
+    overflow: hidden;
+  }
+  .modal-footer {
+    .creat-comment {
+      margin-right: 25rem;
+      div {margin-top: 0;}
+      .label-title {
+        font-size: 1rem;
+        margin: 0;
+        width: 7rem;
+        line-height: 2.3rem;
+      }
+      input {
+        width: 30rem;
+        height: 2.3rem;
+      }
+    }
+  }
+}
+
+.nurse-summary {
+  .modal-header {
+	  .red-btn {
+		  border: 2px solid #cc0000;
+		  background: #cc0000 !important;
+		  span {
+			  color: #ffffff !important;
+		  }
+	  }
+	  .red-btn:hover {
+		  background: #e81123 !important;
+		  span {
+			  color: #ffffff !important;
+		  }
+	  }
+  }
+  .modal-footer {
+    .creat-comment {
+      margin-right: 10rem;
+      div {margin-top: 0;}
+      .label-title {
+        font-size: 1rem;
+        margin: 0;
+        width: 7rem;
+        line-height: 2.3rem;
+      }
+      input {
+        width: 30rem;
+        height: 2.3rem;
+      }
+    }
+  }
+}
+
+.nurse-list {
+  top: 18%;
+  .modal-dialog {
+    max-width: 60vw;
+    max-height: 60vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 60vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.select-status-item {
+  top: 15%;
+  .modal-dialog {
+    max-width: 20vw;
+    max-height: 50vh;
+  }
+  .modal-content {
+    width: 20vw;
+    height: 50vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.nutrition-guidance-schedule {
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.medication-guidance-schedule {
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 100vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 100vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.progresschart-modal{
+  .modal-dialog {
+    max-width:95vw;
+  }
+  .modal-content{
+    width:95vw;
+  }
+}
+.nurse-instruction-schedule {
+  .modal-dialog {
+    max-width: 90vw;
+    max-height: 100vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 100vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.inspection-result-dlg{
+  .modal-dialog {
+    max-width: 80vw;
+  }
+  .modal-content {
+    width: 80vw;
+  }
+}
+.allergy-dlg {
+  top: 0;
+  .modal-dialog {
+    max-width: 42rem;
+    height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    min-width: 42rem;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      width: 42rem;
+      .modal-body {
+        min-width: 42rem;
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 90vh;
+      }
+      .modal-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.close-back-btn{
+  background:white!important;
+  border:1px solid #7e7e7e !important;
+  span{
+    font-size:1rem;
+    color:black!important;
+  }
+  margin-left:0.5rem!important;
+}
+.close-back-btn:hover{
+  background: #cc0000!important;
+  border:1px solid #cc0000!important;
+  span {
+    color: #ffffff!important;
+  }
+}
+.addProgress_modal{
+  top: 0;
+  .modal-dialog {
+    min-width: 24rem;
+    height: 100vh;
+    max-width: 48rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      min-width: 24rem;
+      width: auto;
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 60vh;
+      }
+      .modal-footer{
+        justify-content: flex-end!important;
+      }
+    }
+  }
+}
+.dial_condition_detail_modal{
+  top: 0;
+  .modal-dialog {
+    min-width: 24rem;
+    width: 100vw;
+    height: 100vh;
+    max-width: 80rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      min-width: 24rem;
+      width: 100rem;
+      max-width: 100vw;
+      margin-left: auto;
+      margin-right: auto;
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        height: 84vh;
+      }
+      .modal-footer{
+        justify-content: flex-end!important;
+      }
+    }
+  }
+}
+.small_addProgress_modal{
+  .modal-dialog {
+    max-width: 30rem;
+  }
+}
+.nurse_instruction_add {
+  top:5%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 85vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 85vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.instruction-usage-add-modal{
+  top:10%;
+  .modal-dialog {
+    max-width: 35vw;    
+  }
+  .modal-content {
+    width: 35vw;
+    height: 62vh;
+  }
+}
+.chart-title-modal {
+  .modal-dialog {
+    top:10%;
+    max-width: 60vw;
+    max-height: 75vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 75vh;
+  }
+  .modal-body {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+.progress-chart-set-modal {
+  top:10%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 65vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 65vh;
+  }
+  .modal-body {
+    overflow: hidden;
+    height:100%;
+  }
+}
+.instruction-stop-modal{
+  top: 20%;
+}
+.auto_height_width_modal{
+  top: 0;
+  .modal-dialog {
+    min-width: 24rem;
+    height: 100vh;
+    max-width: 90vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    .modal-content {
+      min-width: 24rem;
+      width: auto;
+      .modal-body {
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 90vh;
+      }
+      .modal-footer{
+        justify-content: flex-end!important;
+      }
+    }
+  }
+}
+.nurse-profile-history-detail-modal {
+  top:10%;
+  .modal-dialog {
+    max-height: 70vh;
+    max-width: 75vw;
+  }
+  .modal-content {
+    height: 75vh;
+    width: 75vw;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.set-regular-text-modal {
+  top:5%;
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 85vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 85vh;
+    .modal-body {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.hospitalization-patient-history {
+  .modal-dialog {
+    top: 15%;
+    max-width: 55vw;
+    max-height: 60vh;
+    .modal-body {
+      overflow: hidden;
+    }
+  }
+  .modal-content {
+    width: 55vw;
+    height: 60vh;
+  }
+}
+.reservation_create_modal {
+  top: 20%;
+  .modal-dialog {
+    max-width: 37vw;
+    max-height: 35vh;
+  }
+  .modal-content {
+    width: 37vw;
+    height: 35vh;
+  }
+}
+.family-modal{
+  .modal-body{
+    padding-top:0;
+    padding-left:0;
+    padding-right:0;
+  }
+}
+.set-bed-background {
+  margin-top: 10%;
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 60vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 60vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.patient-sticky-note {
+  margin-top: 15%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 50vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 50vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.death-register-modal {
+  top: 25%;
+  .modal-dialog {
+    max-width: 35vw;
+    max-height: 30vh;
+  }
+  .modal-content {
+    width: 35vw;
+    height: 30vh;
+  }
+}
+
+.patient-certification {
+  top: 2%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.select-done-reservation-date-time {
+  top: 15%;
+  .modal-dialog {
+    max-width: 25vw;
+    max-height: 45vh;
+  }
+  .modal-content {
+    width: 25vw;
+    height: 45vh;
+  }
+}
+
+.input-result {
+  top: 10%;
+  .modal-dialog {
+    max-width: 60vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 70vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.register-comment {
+  top: 20%;
+  .modal-dialog {
+    max-width: 35vw;
+    max-height: 18rem;
+  }
+  .modal-content {
+    width: 35vw;
+    height: 18rem;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.save-search-condition {
+  top: 15%;
+  .modal-dialog {
+    max-width: 35vw;
+    max-height: 55vh;
+  }
+  .modal-content {
+    width: 35vw;
+    height: 55vh;
+  }
+}
+
+.dislay-condition-modal {
+  top: 15%;
+  .modal-dialog {
+    max-width: 40vw;
+    max-height: 60vh;
+  }
+  .modal-content {
+    width: 40vw;
+    height: 60vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.staff-setting-modal{
+  top:4%;
+  .modal-content{
+    width:700px;
+  }
+}
+
+.passing-time-list {
+  .modal-dialog {
+    top: 15%;
+    max-width: 70vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 70vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.edit-passing-time {
+  top: 20%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 40vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height: 40vh;
+  }
+}
+
+.instruction-book-calendar {
+  .modal-dialog {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+
+.hospital-patient-barcode-print {
+	top: 8%;
+	.modal-dialog {
+		max-width: 90vw;
+		max-height: 80vh;
+	}
+	.modal-content {
+		width: 90vw;
+		height: 80vh;
+	}
+	.modal-body {
+		overflow: hidden;
+	}
+	.check-area {
+		margin:0 0.5rem;
+		label {
+			font-size: 1rem;
+			line-height:2rem;
+		}
+	}
+}
+
+.preview-patient-barcode {
+  top: 20%;
+  .modal-dialog {
+	  max-width: 700px;
+	  max-height: 19.5rem;
+  }
+  .modal-content {
+    width: 700px;
+	  height: 19.5rem;
+  }
+}
+
+.nurse-pass-history-print {
+  top: 25%;
+  .modal-dialog {
+    max-width: 25vw;
+    max-height: 25vh;
+  }
+  .modal-content {
+    width: 25vw;
+    height: 25vh;
+  }
+}
+.observation-edit-modal{
+  top:10%;
+  .modal-dialog {
+    max-width: 80vw;
+    max-height: 65vh;
+  }
+  .modal-content {
+    width: 80vw;
+    height: 65vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.inspection-define-master-list{
+  top:20%;
+  .modal-dialog {
+    max-width: 40vw;
+    max-height: 50vh;
+  }
+  .modal-content {
+	  width: 40vw;
+	  height: 50vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.inspection-define-master-edit{
+  top:25%;
+  .modal-dialog {
+    max-width: 25vw;
+    max-height: 40vh;
+  }
+  .modal-content {
+	  width: 25vw;
+	  height: 40vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.oxygen-calculate-modal {
+  top: 2% !important;
+  .modal-dialog {
+    max-width: 90vw;
+  }
+  .modal-content {
+    width: 90vw;
+    height: 90vh;
+  }
+  .modal-body{
+    overflow: visible !important;
+  }
+}
+.oxygen-calculate-small-modal {
+  top: 2% !important;
+  .modal-dialog {
+    max-width: 60vw;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 90vh
+  }
+  .modal-body{
+    overflow: visible !important;
+  }
+}
+.summary-list-modal{
+  .modal-dialog {
+    top:0;
+    max-width: 95vw;
+    max-height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .modal-content {
+	  width: 95vw;
+	  height: 100vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.inspection-start-end-datetime-register {
+  top:7%;
+  .modal-dialog {
+    max-width: 50vw;
+    max-height: 80vh;
+  }
+  .modal-content {
+    width: 50vw;
+    height:80vh;
+  }
+}
+.disease-name-list {
+  top: 10%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 70vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.select-hospital-description {
+  top: 10%;
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 70vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 70vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.tooltip-area > .tooltip-inner {
+  max-width: 100%;
+}
+.insulin-manage-modal{
+  .modal-dialog {
+    max-height: 94vh;
+  }
+  .modal-content {
+    height: 94vh;
+  }
+}
+
+.react-datepicker__navigation--previous{
+  border-right-color:black;
+}
+.react-datepicker__navigation--next {
+  border-left-color:black;
+}
+.react-datepicker__input-container{
+  input{
+    ime-mode:inactive;
+  }
+}
+.hospital-instruction-modal{
+  .modal-dialog{
+    .modal-content {
+      .modal-body {
+        padding: 0.3rem 1rem;
+        height: 100%;
+      }
+    }
+  }
+}
+.cursor-input input{
+  cursor: pointer !important;
+}
+.react-datepicker__navigation{
+  height:10px!important;
+  margin-top:0!important;
+  margin-left:0!important;
+}
+:disabled {
+  cursor:auto!important;
+}
+.clickable {
+  cursor: pointer!important;  
+}
+.auto-cursor{
+  cursor:default!important;
+}
+.react-datepicker__day--outside-month{
+  color:lightgray!important;
+}
+.react-datepicker__day{
+  border:1px solid white;
+}
+.react-datepicker__day--today{  
+  background:none; 
+  border:1px solid black!important;
+  border-radius: 0.3rem;
+  font-weight: normal!important;
+  color:black;
+}
+.react-datepicker__day--disabled{
+  color:#ccc!important;
+}
+.react-datepicker__day--selected
+{
+  // background:rgb(105, 200, 225);
+  background: #d7f9ec;
+  // border:1px solid rgb(105, 200, 225);
+  border:1px solid #d7f9ec;
+  color:black;
+}
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected{
+  background: none;
+  color:black;
+}
+.react-datepicker__day--selected:hover
+ {  
+  border:1px solid black;
+  background: black;
+  color:white!important;
+}
+.react-datepicker__day--keyboard-selected:hover, .react-datepicker__month-text--keyboard-selected:hover, .react-datepicker__quarter-text--keyboard-selected:hover{
+  background: #eee;
+}
+.react-datepicker__day--keyboard-selected.react-datepicker__day--today{
+  background: none;
+}
+
+.document-reference-modal {
+  .modal-dialog {
+    max-width: 70vw;
+    max-height: 100vh;
+  }
+  .modal-content {
+    width: 70vw;
+    height: 100vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.modal-body {
+  .soap-data-item{
+    font-family: MS Gothic,monospace;
+  }
+  #soap_list_wrapper {
+    font-family: MS Gothic,monospace;
+  }
+}
+.exam-done-modal{
+  .modal-dialog {
+    max-width: 50vw;
+  }
+  .modal-content {
+    width: 50vw;
+  }
+}
+.exam-done-big-modal{
+  .modal-dialog {
+    max-width: 60vw;
+  }
+  .modal-content {
+    width: 60vw;
+  }
+}
+.hospitalized-setting {
+  .modal-dialog {
+    max-width: 98vw;
+  }
+  .modal-content {
+    width: 98vw;
+  }
+}
+.disable-btn {
+  background: #d3d3d3 !important;
+  cursor: default !important;
+  span {color: #595959 !important;}
+}
+.disable-btn:hover {
+  background: #d3d3d3 !important;
+  cursor: default !important;
+  span {color: #595959;}
+}
+.meal-prescription-detail-modal {
+  top: 3%;
+  .modal-dialog {
+    max-width: 60vw;
+    max-height: 90vh;
+  }
+  .modal-content {
+    width: 60vw;
+    height: 90vh;
+  }
+  .modal-body {
+    overflow: hidden;
+  }
+}
+.treatment-increase-period-modal{
+  top:10%;
+  .modal-dialog {
+    max-height: 70vh;
+    max-width: 35vw;
+  }
+  .modal-content {
+    height: 76vh;
+    width: 35vw;
+  }
+  .modal-body {
+    height: calc(100% - 10rem);
+  }
+}
+.exam-administrate_group_modal{
+  top: 5%;
+  .modal-dialog {
+    max-width: 94vw;
+    height: 85vh;
+  }
+  .modal-content {
+    width: 78vw;
+    height: 85vh;
+  }
+}
