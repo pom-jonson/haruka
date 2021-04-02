@@ -1,0 +1,762 @@
+import karte_201 from "~/components/_demo/navigation_resource/karte_201.png";
+import karte_202 from "~/components/_demo/navigation_resource/karte_202.png";
+import karte_203 from "~/components/_demo/navigation_resource/karte_203.png";
+import karte_204 from "~/components/_demo/navigation_resource/karte_204.png";
+import karte_205 from "~/components/_demo/navigation_resource/karte_205.png";
+import karte_206 from "~/components/_demo/navigation_resource/karte_206.png";
+import karte_207 from "~/components/_demo/navigation_resource/karte_207.png";
+import karte_208 from "~/components/_demo/navigation_resource/karte_208.png";
+import karte_209 from "~/components/_demo/navigation_resource/karte_209.png";
+import karte_210 from "~/components/_demo/navigation_resource/karte_210.png";
+import karte_211 from "~/components/_demo/navigation_resource/karte_211.png";
+import karte_212 from "~/components/_demo/navigation_resource/karte_212.png";
+import karte_213 from "~/components/_demo/navigation_resource/karte_213.png";
+import karte_214 from "~/components/_demo/navigation_resource/karte_214.png";
+import karte_215 from "~/components/_demo/navigation_resource/karte_215.png";
+import karte_216 from "~/components/_demo/navigation_resource/karte_216.png";
+import karte_217 from "~/components/_demo/navigation_resource/karte_217.png";
+import karte_218 from "~/components/_demo/navigation_resource/karte_218.png";
+import karte_219 from "~/components/_demo/navigation_resource/karte_219.png";
+import karte_220 from "~/components/_demo/navigation_resource/karte_220.png";
+import karte_221 from "~/components/_demo/navigation_resource/karte_221.png";
+import karte_222 from "~/components/_demo/navigation_resource/karte_222.png";
+import karte_223 from "~/components/_demo/navigation_resource/karte_223.png";
+import karte_224 from "~/components/_demo/navigation_resource/karte_224.png";
+import karte_225 from "~/components/_demo/navigation_resource/karte_225.png";
+import karte_226 from "~/components/_demo/navigation_resource/karte_226.png";
+import karte_227 from "~/components/_demo/navigation_resource/karte_227.png";
+import karte_228 from "~/components/_demo/navigation_resource/karte_228.png";
+import karte_229 from "~/components/_demo/navigation_resource/karte_229.png";
+import karte_230 from "~/components/_demo/navigation_resource/karte_230.png";
+import karte_231 from "~/components/_demo/navigation_resource/karte_231.png";
+import karte_232 from "~/components/_demo/navigation_resource/karte_232.png";
+import karte_233 from "~/components/_demo/navigation_resource/karte_233.png";
+import karte_234 from "~/components/_demo/navigation_resource/karte_234.png";
+import karte_235 from "~/components/_demo/navigation_resource/karte_235.png";
+import karte_236 from "~/components/_demo/navigation_resource/karte_236.png";
+import karte_237 from "~/components/_demo/navigation_resource/karte_237.png";
+import karte_238 from "~/components/_demo/navigation_resource/karte_238.png";
+import karte_239 from "~/components/_demo/navigation_resource/karte_239.png";
+import karte_240 from "~/components/_demo/navigation_resource/karte_240.png";
+import karte_241 from "~/components/_demo/navigation_resource/karte_241.png";
+import karte_242 from "~/components/_demo/navigation_resource/karte_242.png";
+import karte_243 from "~/components/_demo/navigation_resource/karte_243.png";
+import karte_244 from "~/components/_demo/navigation_resource/karte_244.png";
+import karte_245 from "~/components/_demo/navigation_resource/karte_245.png";
+import karte_246 from "~/components/_demo/navigation_resource/karte_246.png";
+import karte_247 from "~/components/_demo/navigation_resource/karte_247.png";
+import karte_248 from "~/components/_demo/navigation_resource/karte_248.png";
+import karte_249 from "~/components/_demo/navigation_resource/karte_249.png";
+import karte_250 from "~/components/_demo/navigation_resource/karte_250.png";
+import karte_251 from "~/components/_demo/navigation_resource/karte_251.png";
+import karte_252 from "~/components/_demo/navigation_resource/karte_252.png";
+import karte_253 from "~/components/_demo/navigation_resource/karte_253.png";
+import karte_254 from "~/components/_demo/navigation_resource/karte_254.png";
+import karte_255 from "~/components/_demo/navigation_resource/karte_255.png";
+import karte_256 from "~/components/_demo/navigation_resource/karte_256.png";
+import karte_257 from "~/components/_demo/navigation_resource/karte_257.png";
+import karte_258 from "~/components/_demo/navigation_resource/karte_258.png";
+import karte_259 from "~/components/_demo/navigation_resource/karte_259.png";
+import karte_260 from "~/components/_demo/navigation_resource/karte_260.png";
+import karte_261 from "~/components/_demo/navigation_resource/karte_261.png";
+import karte_262 from "~/components/_demo/navigation_resource/karte_262.png";
+import karte_263 from "~/components/_demo/navigation_resource/karte_263.png";
+import karte_264 from "~/components/_demo/navigation_resource/karte_264.png";
+import karte_265 from "~/components/_demo/navigation_resource/karte_265.png";
+import karte_266 from "~/components/_demo/navigation_resource/karte_266.png";
+import karte_267 from "~/components/_demo/navigation_resource/karte_267.png";
+import karte_268 from "~/components/_demo/navigation_resource/karte_268.png";
+import karte_269 from "~/components/_demo/navigation_resource/karte_269.png";
+import karte_270 from "~/components/_demo/navigation_resource/karte_270.png";
+import karte_271 from "~/components/_demo/navigation_resource/karte_271.png";
+import karte_272 from "~/components/_demo/navigation_resource/karte_272.png";
+import karte_273 from "~/components/_demo/navigation_resource/karte_273.png";
+import karte_274 from "~/components/_demo/navigation_resource/karte_274.png";
+import karte_2004 from "~/components/_demo/navigation_resource/karte_255.png";
+import karte_2005 from "~/components/_demo/navigation_resource/karte_2005.png";
+import karte_2012 from "~/components/_demo/navigation_resource/karte_2012.png";
+import karte_2017 from "~/components/_demo/navigation_resource/karte_2017.png";
+import karte_2018 from "~/components/_demo/navigation_resource/karte_2018.png";
+import karte_2019 from "~/components/_demo/navigation_resource/karte_2019.png";
+import karte_2020 from "~/components/_demo/navigation_resource/karte_2020.png";
+import karte_2021 from "~/components/_demo/navigation_resource/karte_2021.png";
+
+import karte_285 from "~/components/_demo/navigation_resource/karte_285.png";
+import karte_275 from "~/components/_demo/navigation_resource/karte_275.png";
+import karte_287 from "~/components/_demo/navigation_resource/karte_287.png";
+import karte_288 from "~/components/_demo/navigation_resource/karte_288.png";
+import karte_289 from "~/components/_demo/navigation_resource/karte_289.png";
+import karte_290 from "~/components/_demo/navigation_resource/karte_290.png";
+import karte_280 from "~/components/_demo/navigation_resource/karte_280.png";
+import karte_277 from "~/components/_demo/navigation_resource/karte_277.png";
+import karte_279 from "~/components/_demo/navigation_resource/karte_279.png";
+import karte_284 from "~/components/_demo/navigation_resource/karte_284.png";
+import karte_286 from "~/components/_demo/navigation_resource/karte_286.png";
+import karte_278 from "~/components/_demo/navigation_resource/karte_278.png";
+import karte_282 from "~/components/_demo/navigation_resource/karte_282.png";
+import karte_283 from "~/components/_demo/navigation_resource/karte_283.png";
+import karte_281 from "~/components/_demo/navigation_resource/karte_281.png";
+import karte_291 from "~/components/_demo/navigation_resource/karte_291.png";
+import karte_292 from "~/components/_demo/navigation_resource/karte_292.png";
+import karte_293 from "~/components/_demo/navigation_resource/karte_293.png";
+import karte_294 from "~/components/_demo/navigation_resource/karte_294.png";
+import karte_295 from "~/components/_demo/navigation_resource/karte_295.png";
+import karte_297 from "~/components/_demo/navigation_resource/karte_297.png";
+import karte_298 from "~/components/_demo/navigation_resource/karte_298.png";
+import karte_299 from "~/components/_demo/navigation_resource/karte_299.png";
+import karte_300 from "~/components/_demo/navigation_resource/karte_300.png";
+
+import karte_2001 from "~/components/_demo/navigation_resource/karte_2001.png";
+import karte_2002 from "~/components/_demo/navigation_resource/karte_2002.png";
+import karte_2003 from "~/components/_demo/navigation_resource/karte_2003.png";
+
+import karte_2006 from "~/components/_demo/navigation_resource/karte_2006.png";
+import karte_2007 from "~/components/_demo/navigation_resource/karte_2007.png";
+import karte_2008 from "~/components/_demo/navigation_resource/karte_2008.png";
+import karte_2009 from "~/components/_demo/navigation_resource/karte_2009.png";
+import karte_2010 from "~/components/_demo/navigation_resource/karte_2010.png";
+import karte_2011 from "~/components/_demo/navigation_resource/karte_2011.png";
+
+// 看護業務
+import nurse_301 from "~/components/_demo/navigation_resource/nurse_301.png";
+import nurse_302 from "~/components/_demo/navigation_resource/nurse_302.png";
+import nurse_303 from "~/components/_demo/navigation_resource/nurse_303.png";
+// import nurse_304 from "~/components/_demo/navigation_resource/nurse_304.png";
+import nurse_305 from "~/components/_demo/navigation_resource/nurse_305.png";
+import nurse_306 from "~/components/_demo/navigation_resource/nurse_306.png";
+import nurse_307 from "~/components/_demo/navigation_resource/nurse_307.png";
+import nurse_308 from "~/components/_demo/navigation_resource/nurse_308.png";
+import nurse_309 from "~/components/_demo/navigation_resource/nurse_309.png";
+import nurse_310 from "~/components/_demo/navigation_resource/nurse_310.png";
+import nurse_311 from "~/components/_demo/navigation_resource/nurse_311.png";
+import nurse_312 from "~/components/_demo/navigation_resource/nurse_312.png";
+import nurse_313 from "~/components/_demo/navigation_resource/nurse_313.png";
+import nurse_314 from "~/components/_demo/navigation_resource/nurse_314.png";
+import nurse_315 from "~/components/_demo/navigation_resource/nurse_315.png";
+import nurse_316 from "~/components/_demo/navigation_resource/nurse_316.png";
+import nurse_317 from "~/components/_demo/navigation_resource/nurse_317.png";
+import nurse_318 from "~/components/_demo/navigation_resource/nurse_318.png";
+import nurse_319 from "~/components/_demo/navigation_resource/nurse_319.png";
+import nurse_320 from "~/components/_demo/navigation_resource/nurse_320.png";
+import nurse_321 from "~/components/_demo/navigation_resource/nurse_321.png";
+import nurse_322 from "~/components/_demo/navigation_resource/nurse_322.png";
+
+//部門
+import part_401 from "~/components/_demo/navigation_resource/part_401.png";
+import part_402 from "~/components/_demo/navigation_resource/part_402.png";
+import part_403 from "~/components/_demo/navigation_resource/part_403.png";
+import part_404 from "~/components/_demo/navigation_resource/part_404.png";
+import part_405 from "~/components/_demo/navigation_resource/part_405.png";
+import part_406 from "~/components/_demo/navigation_resource/part_406.png";
+import part_407 from "~/components/_demo/navigation_resource/part_407.png";
+import part_408 from "~/components/_demo/navigation_resource/part_408.png";
+import part_409 from "~/components/_demo/navigation_resource/part_409.png";
+import part_410 from "~/components/_demo/navigation_resource/part_410.png";
+import part_459 from "~/components/_demo/navigation_resource/part_410.png";
+import part_460 from "~/components/_demo/navigation_resource/part_410.png";
+import part_462 from "~/components/_demo/navigation_resource/part_410.png";
+import part_463 from "~/components/_demo/navigation_resource/part_410.png";
+import part_411 from "~/components/_demo/navigation_resource/part_411.png";
+import part_412 from "~/components/_demo/navigation_resource/part_412.png";
+import part_413 from "~/components/_demo/navigation_resource/part_413.png";
+import part_414 from "~/components/_demo/navigation_resource/part_414.png";
+import part_415 from "~/components/_demo/navigation_resource/part_415.png";
+import part_416 from "~/components/_demo/navigation_resource/part_416.png";
+import part_417 from "~/components/_demo/navigation_resource/part_417.png";
+import part_418 from "~/components/_demo/navigation_resource/part_418.png";
+import part_419 from "~/components/_demo/navigation_resource/part_419.png";
+import part_420 from "~/components/_demo/navigation_resource/part_420.png";
+import part_421 from "~/components/_demo/navigation_resource/part_421.png";
+import part_422 from "~/components/_demo/navigation_resource/part_422.png";
+import part_423 from "~/components/_demo/navigation_resource/part_423.png";
+import part_424 from "~/components/_demo/navigation_resource/part_424.png";
+import part_425 from "~/components/_demo/navigation_resource/part_425.png";
+import part_426 from "~/components/_demo/navigation_resource/part_426.png";
+import part_427 from "~/components/_demo/navigation_resource/part_427.png";
+import part_428 from "~/components/_demo/navigation_resource/part_428.png";
+import part_429 from "~/components/_demo/navigation_resource/part_429.png";
+import part_430 from "~/components/_demo/navigation_resource/part_430.png";
+import part_431 from "~/components/_demo/navigation_resource/part_431.png";
+import part_432 from "~/components/_demo/navigation_resource/part_432.png";
+import part_433 from "~/components/_demo/navigation_resource/part_433.png";
+import part_434 from "~/components/_demo/navigation_resource/part_434.png";
+import part_435 from "~/components/_demo/navigation_resource/part_435.png";
+import part_436 from "~/components/_demo/navigation_resource/part_436.png";
+import part_437 from "~/components/_demo/navigation_resource/part_437.png";
+import part_438 from "~/components/_demo/navigation_resource/part_438.png";
+import part_439 from "~/components/_demo/navigation_resource/part_439.png";
+import part_440 from "~/components/_demo/navigation_resource/part_440.png";
+import part_441 from "~/components/_demo/navigation_resource/part_441.png";
+import part_442 from "~/components/_demo/navigation_resource/part_442.png";
+import part_443 from "~/components/_demo/navigation_resource/part_443.png";
+import part_444 from "~/components/_demo/navigation_resource/part_444.png";
+import part_445 from "~/components/_demo/navigation_resource/part_445.png";
+import part_446 from "~/components/_demo/navigation_resource/part_446.png";
+import part_447 from "~/components/_demo/navigation_resource/part_447.png";
+import part_448 from "~/components/_demo/navigation_resource/part_448.png";
+import part_4001 from "~/components/_demo/navigation_resource/part_4001.png";
+
+import part_449 from "~/components/_demo/navigation_resource/part_449.png";
+import part_456 from "~/components/_demo/navigation_resource/part_449.png";
+import part_4003 from "~/components/_demo/navigation_resource/part_4003.png";
+import part_4002 from "~/components/_demo/navigation_resource/part_4002.png";
+import part_4004 from "~/components/_demo/navigation_resource/part_4004.png";
+import part_450 from "~/components/_demo/navigation_resource/part_450.png";
+import part_4005 from "~/components/_demo/navigation_resource/part_4005.png";
+import part_4006 from "~/components/_demo/navigation_resource/part_4006.png";
+import part_4007 from "~/components/_demo/navigation_resource/part_4007.png";
+import part_4008 from "~/components/_demo/navigation_resource/part_4008.png";
+import part_4009 from "~/components/_demo/navigation_resource/part_4009.png";
+
+import part_454 from "~/components/_demo/navigation_resource/part_454.png";
+import part_455 from "~/components/_demo/navigation_resource/part_455.png";
+import part_452 from "~/components/_demo/navigation_resource/part_452.png";
+import part_453 from "~/components/_demo/navigation_resource/part_453.png";
+import part_451 from "~/components/_demo/navigation_resource/part_451.png";
+import part_457 from "~/components/_demo/navigation_resource/part_457.png";
+import part_458 from "~/components/_demo/navigation_resource/part_458.png";
+//メンテナンス
+import maintain_801 from "~/components/_demo/navigation_resource/maintain_801.png";
+import maintain_802 from "~/components/_demo/navigation_resource/maintain_802.png";
+import maintain_803 from "~/components/_demo/navigation_resource/maintain_803.png";
+import maintain_804 from "~/components/_demo/navigation_resource/maintain_804.png";
+import maintain_805 from "~/components/_demo/navigation_resource/maintain_805.png";
+import maintain_806 from "~/components/_demo/navigation_resource/maintain_806.png";
+import maintain_807 from "~/components/_demo/navigation_resource/maintain_807.png";
+import maintain_808 from "~/components/_demo/navigation_resource/maintain_808.png";
+import maintain_809 from "~/components/_demo/navigation_resource/maintain_809.png";
+import maintain_810 from "~/components/_demo/navigation_resource/maintain_810.png";
+import maintain_811 from "~/components/_demo/navigation_resource/maintain_811.png";
+import maintain_812 from "~/components/_demo/navigation_resource/maintain_812.png";
+import maintain_813 from "~/components/_demo/navigation_resource/maintain_813.png";
+import maintain_814 from "~/components/_demo/navigation_resource/maintain_814.png";
+import maintain_815 from "~/components/_demo/navigation_resource/maintain_815.png";
+import maintain_816 from "~/components/_demo/navigation_resource/maintain_816.png";
+import maintain_817 from "~/components/_demo/navigation_resource/maintain_817.png";
+import maintain_818 from "~/components/_demo/navigation_resource/maintain_818.png";
+import maintain_819 from "~/components/_demo/navigation_resource/maintain_819.png";
+import maintain_8011 from "~/components/_demo/navigation_resource/maintain_8011.png";
+
+import maintain_822 from "~/components/_demo/navigation_resource/maintain_822.png";
+import maintain_821 from "~/components/_demo/navigation_resource/maintain_821.png";
+import maintain_824 from "~/components/_demo/navigation_resource/maintain_824.png";
+import maintain_823 from "~/components/_demo/navigation_resource/maintain_823.png";
+import maintain_820 from "~/components/_demo/navigation_resource/maintain_820.png";
+import maintain_825 from "~/components/_demo/navigation_resource/maintain_825.png";
+import maintain_826 from "~/components/_demo/navigation_resource/maintain_826.png";
+import maintain_827 from "~/components/_demo/navigation_resource/maintain_827.png";
+import maintain_828 from "~/components/_demo/navigation_resource/maintain_828.png";
+import maintain_829 from "~/components/_demo/navigation_resource/maintain_829.png";
+
+import maintain_832 from "~/components/_demo/navigation_resource/maintain_832.png";
+import maintain_836 from "~/components/_demo/navigation_resource/maintain_836.png";
+import maintain_831 from "~/components/_demo/navigation_resource/maintain_831.png";
+import maintain_833 from "~/components/_demo/navigation_resource/maintain_833.png";
+import maintain_834 from "~/components/_demo/navigation_resource/maintain_834.png";
+import maintain_837 from "~/components/_demo/navigation_resource/maintain_837.png";
+import maintain_838 from "~/components/_demo/navigation_resource/maintain_838.png";
+import maintain_839 from "~/components/_demo/navigation_resource/maintain_839.png";
+// 共通
+import common_106 from "~/components/_demo/navigation_resource/common_106.png";
+import common_121 from "~/components/_demo/navigation_resource/common_121.png";
+import common_117 from "~/components/_demo/navigation_resource/common_117.png";
+import common_187 from "~/components/_demo/navigation_resource/common_187.png";
+import common_118 from "~/components/_demo/navigation_resource/common_118.png";
+import common_114 from "~/components/_demo/navigation_resource/common_114.png";
+import common_115 from "~/components/_demo/navigation_resource/common_115.png";
+import common_120 from "~/components/_demo/navigation_resource/common_120.png";
+import common_109 from "~/components/_demo/navigation_resource/common_109.png";
+import common_108 from "~/components/_demo/navigation_resource/common_108.png";
+import common_102 from "~/components/_demo/navigation_resource/common_102.png";
+import common_101 from "~/components/_demo/navigation_resource/common_101.png";
+import common_105 from "~/components/_demo/navigation_resource/common_105.png";
+import common_119 from "~/components/_demo/navigation_resource/common_119.png";
+import common_136 from "~/components/_demo/navigation_resource/common_136.png";
+import common_132 from "~/components/_demo/navigation_resource/common_132.png";
+import common_133 from "~/components/_demo/navigation_resource/common_133.png";
+import common_134 from "~/components/_demo/navigation_resource/common_134.png";
+
+import common_138 from "~/components/_demo/navigation_resource/common_138.png";
+import common_139 from "~/components/_demo/navigation_resource/common_139.png";
+
+import common_110 from "~/components/_demo/navigation_resource/common_110.png";
+import common_111 from "~/components/_demo/navigation_resource/common_111.png";
+import common_112 from "~/components/_demo/navigation_resource/common_112.png";
+import common_124 from "~/components/_demo/navigation_resource/common_124.png";
+import common_135 from "~/components/_demo/navigation_resource/common_135.png";
+import common_146 from "~/components/_demo/navigation_resource/common_146.png";
+import common_147 from "~/components/_demo/navigation_resource/common_147.png";
+import common_148 from "~/components/_demo/navigation_resource/common_148.png";
+import common_149 from "~/components/_demo/navigation_resource/common_149.png";
+import common_150 from "~/components/_demo/navigation_resource/common_150.png";
+import common_151 from "~/components/_demo/navigation_resource/common_151.png";
+import common_152 from "~/components/_demo/navigation_resource/common_152.png";
+import common_153 from "~/components/_demo/navigation_resource/common_153.png";
+import common_154 from "~/components/_demo/navigation_resource/common_154.png";
+import common_155 from "~/components/_demo/navigation_resource/common_155.png";
+import common_156 from "~/components/_demo/navigation_resource/common_156.png";
+import common_157 from "~/components/_demo/navigation_resource/common_157.png";
+import common_158 from "~/components/_demo/navigation_resource/common_158.png";
+import common_159 from "~/components/_demo/navigation_resource/common_159.png";
+import common_160 from "~/components/_demo/navigation_resource/common_160.png";
+import common_161 from "~/components/_demo/navigation_resource/common_161.png";
+import common_162 from "~/components/_demo/navigation_resource/common_162.png";
+import common_163 from "~/components/_demo/navigation_resource/common_163.png";
+import common_164 from "~/components/_demo/navigation_resource/common_164.png";
+import common_165 from "~/components/_demo/navigation_resource/common_165.png";
+import common_166 from "~/components/_demo/navigation_resource/common_166.png";
+import common_167 from "~/components/_demo/navigation_resource/common_167.png";
+import common_168 from "~/components/_demo/navigation_resource/common_168.png";
+import common_169 from "~/components/_demo/navigation_resource/common_169.png";
+import common_170 from "~/components/_demo/navigation_resource/common_170.png";
+import common_171 from "~/components/_demo/navigation_resource/common_171.png";
+import common_172 from "~/components/_demo/navigation_resource/common_172.png";
+import common_173 from "~/components/_demo/navigation_resource/common_173.png";
+import common_174 from "~/components/_demo/navigation_resource/common_174.png";
+import common_175 from "~/components/_demo/navigation_resource/common_175.png";
+import common_176 from "~/components/_demo/navigation_resource/common_176.png";
+import common_177 from "~/components/_demo/navigation_resource/common_177.png";
+import common_178 from "~/components/_demo/navigation_resource/common_178.png";
+import common_179 from "~/components/_demo/navigation_resource/common_179.png";
+import common_180 from "~/components/_demo/navigation_resource/common_180.png";
+import common_181 from "~/components/_demo/navigation_resource/common_181.png";
+import common_182 from "~/components/_demo/navigation_resource/common_182.png";
+import common_183 from "~/components/_demo/navigation_resource/common_183.png";
+import common_184 from "~/components/_demo/navigation_resource/common_184.png";
+import common_185 from "~/components/_demo/navigation_resource/common_185.png";
+import common_186 from "~/components/_demo/navigation_resource/common_186.png";
+
+import common_188 from "~/components/_demo/navigation_resource/common_188.png";
+import common_189 from "~/components/_demo/navigation_resource/common_189.png";
+import common_190 from "~/components/_demo/navigation_resource/common_190.png";
+import common_191 from "~/components/_demo/navigation_resource/common_191.png";
+import common_113 from "~/components/_demo/navigation_resource/common_113.png";
+import common_192 from "~/components/_demo/navigation_resource/common_180.png";
+import common_193 from "~/components/_demo/navigation_resource/common_193.png";
+import common_194 from "~/components/_demo/navigation_resource/common_194.png";
+import common_195 from "~/components/_demo/navigation_resource/common_195.png";
+import common_196 from "~/components/_demo/navigation_resource/common_196.png";
+import common_197 from "~/components/_demo/navigation_resource/common_197.png";
+import common_198 from "~/components/_demo/navigation_resource/common_198.png";
+import common_199 from "~/components/_demo/navigation_resource/common_199.png";
+import common_200 from "~/components/_demo/navigation_resource/common_200.png";
+
+// 印刷
+import print_901 from "~/components/_demo/navigation_resource/print_901.png";
+import print_902 from "~/components/_demo/navigation_resource/print_902.png";
+import print_903 from "~/components/_demo/navigation_resource/print_903.png";
+
+//カルテタブアイコン
+import karte_tab_10000 from "~/components/_demo/navigation_resource/karte_tab_10000.png";
+import karte_tab_10001 from "~/components/_demo/navigation_resource/karte_tab_10001.png";
+import karte_tab_10002 from "~/components/_demo/navigation_resource/karte_tab_10002.png";
+import karte_tab_10003 from "~/components/_demo/navigation_resource/karte_tab_10003.png";
+import karte_tab_10004 from "~/components/_demo/navigation_resource/karte_tab_10004.png";
+import karte_tab_10005 from "~/components/_demo/navigation_resource/karte_tab_10005.png";
+import karte_tab_10006 from "~/components/_demo/navigation_resource/karte_tab_10006.png";
+import karte_tab_10007 from "~/components/_demo/navigation_resource/karte_tab_10007.png";
+import karte_tab_10008 from "~/components/_demo/navigation_resource/karte_tab_10008.png";
+import karte_tab_10009 from "~/components/_demo/navigation_resource/karte_tab_10009.png";
+import karte_tab_10010 from "~/components/_demo/navigation_resource/karte_tab_10010.png";
+import karte_tab_10011 from "~/components/_demo/navigation_resource/karte_tab_10011.png";
+import karte_tab_10012 from "~/components/_demo/navigation_resource/karte_tab_10012.png";
+import karte_tab_10013 from "~/components/_demo/navigation_resource/karte_tab_10013.png";
+
+// アレルギー
+// import karte_tab_10013 from "~/components/_demo/allergy_images/navigation_status.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/ADL_status_no.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/ADL_status_yes.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/alergy_status_negative.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/alergy_status_positive.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/alergy_status_no.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/alergy_status_unknown.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/disabled_status_no.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/disabled_status_yes.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/infection_status_negative.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/infection_status_positive.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/infection_status_no.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/infection_status_unknown.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/vaccine_status_yes.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/vaccine_status_no.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/staff_status_yes.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/staff_status_no.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/foodalergy_status_no.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/foodalergy_status_yes.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/drugalergy_status_no.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/drugalergy_status_yes.png";
+// import karte_tab_10013 from "~/components/_demo/allergy_images/introduction_status.png";
+
+
+export const karte_image_array = [
+  {id: 201, img: karte_201},
+  {id: 202, img: karte_202},
+  {id: 203, img: karte_203},
+  {id: 204, img: karte_204},
+  {id: 205, img: karte_205},
+  {id: 206, img: karte_206},
+  {id: 207, img: karte_207},
+  {id: 208, img: karte_208},
+  {id: 209, img: karte_209},
+  {id: 210, img: karte_210},
+  {id: 211, img: karte_211},
+  {id: 212, img: karte_212},
+  {id: 213, img: karte_213},
+  {id: 214, img: karte_214},
+  {id: 215, img: karte_215},
+  {id: 216, img: karte_216},
+  {id: 217, img: karte_217},
+  {id: 218, img: karte_218},
+  {id: 219, img: karte_219},
+  {id: 220, img: karte_220},
+  {id: 221, img: karte_221},
+  {id: 222, img: karte_222},
+  {id: 223, img: karte_223},
+  {id: 224, img: karte_224},
+  {id: 225, img: karte_225},
+  {id: 226, img: karte_226},
+  {id: 227, img: karte_227},
+  {id: 228, img: karte_228},
+  {id: 229, img: karte_229},
+  {id: 230, img: karte_230},
+  {id: 231, img: karte_231},
+  {id: 232, img: karte_232},
+  {id: 233, img: karte_233},
+  {id: 234, img: karte_234},
+  {id: 235, img: karte_235},
+  {id: 236, img: karte_236},
+  {id: 237, img: karte_237},
+  {id: 238, img: karte_238},
+  {id: 239, img: karte_239},
+  {id: 240, img: karte_240},
+  {id: 241, img: karte_241},
+  {id: 242, img: karte_242},
+  {id: 243, img: karte_243},
+  {id: 244, img: karte_244},
+  {id: 245, img: karte_245},
+  {id: 246, img: karte_246},
+  {id: 247, img: karte_247},
+  {id: 248, img: karte_248},
+  {id: 249, img: karte_249},
+  {id: 250, img: karte_250},
+  {id: 251, img: karte_251},
+  {id: 252, img: karte_252},
+  {id: 253, img: karte_253},
+  {id: 254, img: karte_254},
+  {id: 255, img: karte_255},
+  {id: 256, img: karte_256},
+  {id: 257, img: karte_257},
+  {id: 258, img: karte_258},
+  {id: 259, img: karte_259},
+  {id: 260, img: karte_260},
+  {id: 261, img: karte_261},
+  {id: 262, img: karte_262},
+  {id: 263, img: karte_263},
+  {id: 264, img: karte_264},
+  {id: 265, img: karte_265},
+  {id: 266, img: karte_266},
+  {id: 267, img: karte_267},
+  {id: 268, img: karte_268},
+  {id: 269, img: karte_269},
+  {id: 270, img: karte_270},
+  {id: 271, img: karte_271},
+  {id: 272, img: karte_272},
+  {id: 273, img: karte_273},
+  {id: 2013, img: karte_273},
+  {id: 2014, img: karte_273},
+  {id: 2015, img: karte_273},
+  {id: 274, img: karte_274},
+  {id: 2004, img: karte_2004},
+  {id: 2005, img: karte_2005},
+  {id: 2010, img: karte_2010},
+  {id: 2011, img: karte_2011},
+  {id: 2012, img: karte_2012},
+  {id: 2017, img: karte_2017},
+  {id: 2018, img: karte_2018},
+  {id: 2019, img: karte_2019},
+  {id: 2020, img: karte_2020},
+  {id: 2021, img: karte_2021},
+  
+  {id: 285, img: karte_285},
+  {id: 275, img: karte_275},
+  {id: 287, img: karte_287},
+  {id: 288, img: karte_288},
+  {id: 289, img: karte_289},
+  {id: 290, img: karte_290},
+  {id: 280, img: karte_280},
+  {id: 277, img: karte_277},
+  {id: 279, img: karte_279},
+  {id: 284, img: karte_284},
+  {id: 286, img: karte_286},
+  {id: 278, img: karte_278},
+  {id: 282, img: karte_282},
+  {id: 283, img: karte_283},
+  {id: 281, img: karte_281},
+  {id: 291, img: karte_291},
+  {id: 292, img: karte_292},
+  {id: 293, img: karte_293},
+  {id: 294, img: karte_294},
+  {id: 295, img: karte_295},
+  {id: 297, img: karte_297},
+  {id: 298, img: karte_298},
+  {id: 299, img: karte_299},
+  {id: 300, img: karte_300},
+  
+  {id: 2001, img: karte_2001},
+  {id: 2002, img: karte_2002},
+  {id: 2003, img: karte_2003},
+  {id: 2006, img: karte_2006},
+  {id: 2007, img: karte_2007},
+  {id: 2008, img: karte_2008},
+  {id: 2009, img: karte_2009},
+  {id: 2010, img: karte_2010},
+
+// 看護業務
+  {id: 301, img: nurse_301},
+  {id: 302, img: nurse_302},
+  {id: 303, img: nurse_303},
+  {id: 323, img: nurse_303},
+  // {id: 304, img: nurse_304},
+  {id: 305, img: nurse_305},
+  {id: 306, img: nurse_306},
+  {id: 307, img: nurse_307},
+  {id: 308, img: nurse_308},
+  {id: 309, img: nurse_309},
+  {id: 310, img: nurse_310},
+  {id: 311, img: nurse_311},
+  {id: 312, img: nurse_312},
+  {id: 313, img: nurse_313},
+  {id: 314, img: nurse_314},
+  {id: 315, img: nurse_315},
+  {id: 316, img: nurse_316},
+  {id: 317, img: nurse_317},
+  {id: 318, img: nurse_318},
+  {id: 319, img: nurse_319},
+  {id: 320, img: nurse_320},
+  {id: 321, img: nurse_321},
+  {id: 322, img: nurse_322},
+//部門
+  {id: 401, img: part_401},
+  {id: 402, img: part_402},
+  {id: 461, img: part_402},
+  {id: 403, img: part_403},
+  {id: 404, img: part_404},
+  {id: 405, img: part_405},
+  {id: 406, img: part_406},
+  {id: 407, img: part_407},
+  {id: 408, img: part_408},
+  {id: 409, img: part_409},
+  {id: 410, img: part_410},
+  {id: 459, img: part_459},
+  {id: 460, img: part_460},
+  {id: 462, img: part_462},
+  {id: 463, img: part_463},
+  {id: 411, img: part_411},
+  {id: 412, img: part_412},
+  {id: 413, img: part_413},
+  {id: 464, img: part_413},
+  {id: 465, img: part_413},
+  {id: 466, img: part_413},
+  {id: 414, img: part_414},
+  {id: 415, img: part_415},
+  {id: 416, img: part_416},
+  {id: 417, img: part_417},
+  {id: 418, img: part_418},
+  {id: 419, img: part_419},
+  {id: 420, img: part_420},
+  {id: 421, img: part_421},
+  {id: 422, img: part_422},
+  {id: 423, img: part_423},
+  {id: 424, img: part_424},
+  {id: 425, img: part_425},
+  {id: 426, img: part_426},
+  {id: 427, img: part_427},
+  {id: 428, img: part_428},
+  {id: 429, img: part_429},
+  {id: 430, img: part_430},
+  {id: 431, img: part_431},
+  {id: 432, img: part_432},
+  {id: 433, img: part_433},
+  {id: 434, img: part_434},
+  {id: 435, img: part_435},
+  {id: 436, img: part_436},
+  {id: 437, img: part_437},
+  {id: 438, img: part_438},
+  {id: 439, img: part_439},
+  {id: 440, img: part_440},
+  {id: 441, img: part_441},
+  {id: 442, img: part_442},
+  {id: 443, img: part_443},
+  {id: 444, img: part_444},
+  {id: 445, img: part_445},
+  {id: 446, img: part_446},
+  {id: 447, img: part_447},
+  {id: 448, img: part_448},
+  {id: 4001, img: part_4001},
+  
+  {id: 449, img: part_449},
+  {id: 456, img: part_456},
+  {id: 4003, img: part_4003},
+  {id: 4002, img: part_4002},
+  {id: 4004, img: part_4004},
+  {id: 450, img: part_450},
+  {id: 4005, img: part_4005},
+  {id: 4006, img: part_4006},
+  {id: 4007, img: part_4007},
+  {id: 4008, img: part_4008},
+  {id: 4009, img: part_4009},
+  
+  {id: 454, img: part_454},
+  {id: 455, img: part_455},
+  {id: 452, img: part_452},
+  {id: 453, img: part_453},
+  {id: 451, img: part_451},
+  {id: 457, img: part_457},
+  {id: 458, img: part_458},
+//メンテナンス
+  {id: 801, img: maintain_801},
+  {id: 802, img: maintain_802},
+  {id: 803, img: maintain_803},
+  {id: 804, img: maintain_804},
+  {id: 805, img: maintain_805},
+  {id: 806, img: maintain_806},
+  {id: 807, img: maintain_807},
+  {id: 808, img: maintain_808},
+  {id: 809, img: maintain_809},
+  {id: 810, img: maintain_810},
+  {id: 811, img: maintain_811},
+  {id: 812, img: maintain_812},
+  {id: 813, img: maintain_813},
+  {id: 814, img: maintain_814},
+  {id: 815, img: maintain_815},
+  {id: 816, img: maintain_816},
+  {id: 817, img: maintain_817},
+  {id: 818, img: maintain_818},
+  {id: 819, img: maintain_819},
+  {id: 8011, img: maintain_8011},
+  
+  {id: 822, img: maintain_822},
+  {id: 821, img: maintain_821},
+  {id: 824, img: maintain_824},
+  {id: 823, img: maintain_823},
+  {id: 820, img: maintain_820},
+  {id: 825, img: maintain_825},
+  {id: 826, img: maintain_826},
+  {id: 827, img: maintain_827},
+  {id: 828, img: maintain_828},
+  {id: 829, img: maintain_829},
+  {id: 830, img: maintain_802},
+  
+  {id: 832, img: maintain_832},
+  {id: 836, img: maintain_836},
+  {id: 831, img: maintain_831},
+  {id: 833, img: maintain_833},
+  {id: 834, img: maintain_834},
+  {id: 837, img: maintain_837},
+  {id: 838, img: maintain_838},
+  {id: 839, img: maintain_839},
+// 共通
+  {id: 106, img: common_106},
+  {id: 121, img: common_121},
+  {id: 117, img: common_117},
+  {id: 187, img: common_187},
+  {id: 118, img: common_118},
+  {id: 115, img: common_115},
+  {id: 120, img: common_120},
+  {id: 109, img: common_109},
+  {id: 108, img: common_108},
+  {id: 102, img: common_102},
+  {id: 101, img: common_101},
+  {id: 105, img: common_105},
+  {id: 119, img: common_119},
+  {id: 136, img: common_136},
+  {id: 132, img: common_132},
+  {id: 133, img: common_133},
+  {id: 134, img: common_134},
+  {id: 138, img: common_138},
+  {id: 139, img: common_139},
+  {id: 114, img: common_114},
+  
+  {id: 110, img: common_110},
+  {id: 111, img: common_111},
+  {id: 112, img: common_112},
+  {id: 124, img: common_124},
+  {id: 135, img: common_135},
+  {id: 146, img: common_146},
+  {id: 147, img: common_147},
+  {id: 148, img: common_148},
+  {id: 149, img: common_149},
+  {id: 150, img: common_150},
+  {id: 151, img: common_151},
+  {id: 152, img: common_152},
+  {id: 153, img: common_153},
+  {id: 154, img: common_154},
+  {id: 155, img: common_155},
+  {id: 156, img: common_156},
+  {id: 157, img: common_157},
+  {id: 158, img: common_158},
+  {id: 159, img: common_159},
+  {id: 160, img: common_160},
+  {id: 161, img: common_161},
+  {id: 162, img: common_162},
+  {id: 163, img: common_163},
+  {id: 164, img: common_164},
+  {id: 165, img: common_165},
+  {id: 166, img: common_166},
+  {id: 167, img: common_167},
+  {id: 168, img: common_168},
+  {id: 169, img: common_169},
+  {id: 170, img: common_170},
+  {id: 171, img: common_171},
+  {id: 172, img: common_172},
+  {id: 173, img: common_173},
+  {id: 174, img: common_174},
+  {id: 175, img: common_175},
+  {id: 176, img: common_176},
+  {id: 177, img: common_177},
+  {id: 178, img: common_178},
+  {id: 179, img: common_179},
+  {id: 180, img: common_180},
+  {id: 181, img: common_181},
+  {id: 182, img: common_182},
+  {id: 183, img: common_183},
+  {id: 184, img: common_184},
+  {id: 185, img: common_185},
+  {id: 186, img: common_186},
+  {id: 188, img: common_188},
+  {id: 189, img: common_189},
+  {id: 190, img: common_190},
+  {id: 191, img: common_191},
+  {id: 113, img: common_113},
+  {id: 192, img: common_192},
+  {id: 193, img: common_193},
+  {id: 194, img: common_194},
+  {id: 195, img: common_195},
+  {id: 196, img: common_196},
+  {id: 197, img: common_197},
+  {id: 198, img: common_198},
+  {id: 199, img: common_199},
+  {id: 200, img: common_200},
+  
+  // 印刷
+  {id: 901, img: print_901},
+  {id: 902, img: print_902},
+  {id: 903, img: print_903},
+
+// カルテタブ
+  {id: 10000, img: karte_tab_10000},
+  {id: 10001, img: karte_tab_10001},
+  {id: 10002, img: karte_tab_10002},
+  {id: 10003, img: karte_tab_10003},
+  {id: 10004, img: karte_tab_10004},
+  {id: 10005, img: karte_tab_10005},
+  {id: 10006, img: karte_tab_10006},
+  {id: 10007, img: karte_tab_10007},
+  {id: 10008, img: karte_tab_10008},
+  {id: 10009, img: karte_tab_10009},
+  {id: 10010, img: karte_tab_10010},
+  {id: 10011, img: karte_tab_10011},
+  {id: 10012, img: karte_tab_10012},
+  {id: 10013, img: karte_tab_10013},
+  {id: "patient_info", img: karte_tab_10004},
+];
+
