@@ -1,0 +1,170 @@
+export default [
+  {
+    number: 1931,
+    order_title: "院外処方",
+    order_staff_key: 25,
+    receive_authority_json: null,
+    template_id: null,
+    inspection_kind: null,
+    patient_id: 1,
+    form_mode: "prescription_out",
+    link_order_id: null,
+    treat_date: null,
+    order_data: {
+      system_patient_id: "1",
+      insurance_type: 0,
+      order_data: [
+        {
+          medical_business_diagnosing_type: 1,
+          med: [
+            {
+              item_number: "01",
+              item_name: "ブラビックス錠75mg",
+              amount: 1,
+              unit: "錠",
+              milling: 1,
+              can_generic_name: 0,
+              separate_packaging: 0,
+              free_comment: "フリーコメント"
+            },
+            {
+              item_number: "02",
+              item_name: "＊ブラビックス錠75mg",
+              amount: 1,
+              unit: "錠",
+              milling: 1,
+              can_generic_name: 0,
+              separate_packaging: 0,
+              free_comment: "フリーコメント"
+            },
+            {
+              item_number: "03",
+              item_name: "＊ブラビックス錠75mg",
+              amount: 1,
+              unit: "錠",
+              milling: 1,
+              can_generic_name: 0,
+              separate_packaging: 0,
+              free_comment: "フリーコメント"
+            }
+          ],
+          usage: 9801122,
+          days: 2,
+          start_date: 20190307,
+          order_number: "20190314181519000001",
+          order_number_serial: 1,
+          insurance_type: 0
+        }
+      ],
+      med_consult: 1,
+      supply_med_info: 1,
+      psychotropic_drugs_much_reason: 1,
+      poultice_many_reason: 1,
+      free_comment: "コメント",
+      medical_departments_code: 3,
+      diagnosing_date: "2019-03-14",
+      order_directed_date: "2019-03-14",
+      doctor_code: 19,
+      prescription_api_version: "0.190314.02",
+      class_name: "open"
+    },
+    canvas_data: null,
+    rece_json: null,
+    comment: "prescription out v0.190312a",
+    all_notification_flag: 1,
+    receiver_key: null,
+    done_order: null,
+    cancel_flag: null,
+    exam_status: null,
+    exam_id: null,
+    instruction_flag: null,
+    is_enabled: 1,
+    created_at: "2019-03-14 09:15:19",
+    updated_at: "2019-03-14 09:15:19",
+    created_by: 0,
+    updated_by: 0
+  },
+  {
+    number: 2161,
+    order_title: "院外処方",
+    order_staff_key: 21,
+    receive_authority_json: null,
+    template_id: null,
+    inspection_kind: null,
+    patient_id: 1,
+    form_mode: "prescription_out",
+    link_order_id: null,
+    treat_date: null,
+    order_data: {
+      system_patient_id: 1,
+      insurance_type: 0,
+      order_data: [
+        {
+          medical_business_diagnosing_type: 1,
+          med: [
+            {
+              item_number: 9800549,
+              item_name: "ロキソマリン錠６０ｍｇ",
+              amount: 2,
+              unit: "錠",
+              main_unit_flag: 1,
+              is_not_generic: 1,
+              can_generic_name: 0,
+              milling: 1,
+              separate_packaging: 1,
+              free_comment: "",
+              usage_comment: "",
+              usage_optional_num: 0,
+              poultice_times_one_day: 0,
+              poultice_one_day: 0,
+              poultice_days: 0,
+              real_amount: 2,
+              real_unit: "",
+              units_list: [
+                { name: "錠", main_unit_flag: 1 },
+                { name: "箱", main_unit_flag: 0 }
+              ]
+            }
+          ],
+          one_dose_package: 0,
+          usage: 9801122,
+          usage_name: "１日３回 毎食後",
+          days: 10,
+          start_date: 20190307,
+          insurance_type: 0,
+          order_number: "20190320152212000001",
+          order_number_serial: 1,
+          order_type_name: "外内"
+        }
+      ],
+      med_consult: 1,
+      supply_med_info: 1,
+      psychotropic_drugs_much_reason: 1,
+      poultice_many_reason: 1,
+      free_comment: "コメント",
+      department_code: 0,
+      is_internal_prescription: 0,
+      medical_departments_code: 1,
+      diagnosing_date: "2019-03-20",
+      order_directed_date: "2019-03-20",
+      doctor_code: 19,
+      prescription_api_version: "0.190320.02",
+      class_name: ""
+    },
+    canvas_data: null,
+    rece_json: null,
+    comment: null,
+    all_notification_flag: 1,
+    receiver_key: null,
+    done_order: null,
+    cancel_flag: null,
+    exam_status: null,
+    exam_id: null,
+    instruction_flag: null,
+    is_enabled: 1,
+    created_at: "2019-03-20 06:22:12",
+    updated_at: "2019-03-20 06:22:12",
+    created_by: 21,
+    updated_by: 0
+  }
+];
